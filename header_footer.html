@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar with Footer</title>
+    <link rel="stylesheet" href="nav_footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+</head>
+<body>
+    
+    <nav>
+        <div class="logo">
+            <img src="assests/logo.png" alt="Logo">
+        </div>
+
+        <div class="right-content">
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <img src="assests/search.png" alt="Search" class="icon"> 
+            </div>
+
+            <div class="hamburger" onclick="toggleNav()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <div class="nav-links" id="navLinks">
+                <a href="#">
+                    <img src="assests/home.png" alt="Home" class="icon"> 
+                    Home
+                </a>
+                <a href="#">
+                    <img src="assests/volunteer.png" alt="Get Involved" class="icon"> 
+                    Get Involved
+                </a>
+                <a href="#">
+                    <img src="assests/table.png" alt="Table" class="icon"> 
+                    Table
+                </a>
+                <a href="#">
+                    <img src="assests/account.png" alt="Profile" class="icon"> 
+                    Profile
+                </a>
+                <a href="#">
+                    <img src="assests/feedback.png" alt="Feedback" class="icon"> 
+                    Feedback
+                </a>
+                <a href="#">
+                    <img src="assests/team.png" alt="Our Team" class="icon"> 
+                    Our Team
+                </a>
+                <a href="#">
+                    <img src="assests/sitemap.png" alt="Sitemap" class="icon">
+                    Sitemap
+                </a>
+            </div>
+        </div>
+    </nav>
+
+
+    <footer>
+        <div class="footer-column">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="volunteer.html">Get Involved</a></li>
+                <li><a href="table.html">Table</Table></a></li>
+                <li><a href="profile.html">profile</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="our-team.html">Our Team</a></li>
+                <li><a href="Sitemap.html">Sitemap</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <div class="logo">
+            <img src="assests/logo.png" alt="Logo">
+            </div>
+            <p>Email: <a href="mailto:lifebelowwater@gmail.com">lifebelowwatert@gmail.com</a></p>
+            <p>Phone: +123 456 7890</p>
+        </div>
+        <div class="footer-column">
+            <h4>Page Editors</h4>
+            <ul>
+                <li><a href="pageEditor_st1.html">Student 1: Editor Page</a></li>
+                <li><a href="pageEditor_st2.html">Student 2: Editor Page</a></li>
+                <li><a href="pageEditor_st3.html">Student 3: Editor Page</a></li>
+                <li><a href="pageEditor_st4.html">Student 4: Editor Page</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        function toggleNav() {
+            const navLinks = document.getElementById("navLinks");
+            navLinks.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
