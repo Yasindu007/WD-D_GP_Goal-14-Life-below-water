@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Threats to Life Below Water - Ocean Guardians</title>
+    <link rel="stylesheet" href="CSS/Common.css">
+    <link rel="stylesheet" href="CSS/content-page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+</head>
+<body>
+    <!-- Header -->
+    <nav>
+        <div class="logo">
+            <img src="Img/Common/logo.png" alt="Ocean Guardians Logo">
+        </div>
+        <div class="right-content">
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <img src="Img/Common/search.png" alt="Search" class="icon"> 
+            </div>
+            <div class="hamburger" onclick="toggleNav()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a href="home.html"><img src="Img/Common/home.png" alt="Home" class="icon"> Home</a>
+                <a href="volunteer.html"><img src="Img/Common/volunteer.png" alt="Get Involved" class="icon"> Get Involved</a>
+                <a href="table.html"><img src="Img/Common/table.png" alt="Table" class="icon"> Table</a>
+                <a href="profile.html"><img src="Img/Common/account.png" alt="Profile" class="icon"> Profile</a>
+                <a href="feedback.html"><img src="Img/Common/feedback.png" alt="Feedback" class="icon"> Feedback</a>
+                <a href="team.html"><img src="Img/Common/team.png" alt="Our Team" class="icon"> Our Team</a>
+                <a href="sitemap.html"><img src="Img/Common/sitemap.png" alt="Sitemap" class="icon"> Sitemap</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Top Image Bar -->
+    <div class="image-container">
+        <div class="text-on-image">Content 01</div>
+        <div class="text-on-image-2">Home / Content 01</div>
+        <img src="Img/Contents/threats_head.jpeg" class="content-img" alt="Ocean pollution header image">
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <div class="content-post">
+            <h1>Threats to Life Below Water</h1>
+            <h3>Exploring the Challenges Facing Our Oceans</h3>
+            <img src="Img/Contents/threats_img1.jpeg" alt="Plastic waste in the ocean">
+        </div>
+
+        <div class="contents-para">
+            <ul class="unordered-con">
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#pollution">Ocean Pollution</a></li>
+                <li><a href="#overfishing">Overfishing</a></li>
+                <li><a href="#climate">Climate Change</a></li>
+                <li><a href="#bottom" class="jum-to-bottom">Jump to Bottom</a></li>
+            </ul>
+
+            <p id="intro"><strong>Introduction</strong></p>
+            <p>Our oceans, covering over 70% of Earth's surface, are under unprecedented threat. From pollution to overfishing, these challenges endanger marine life and ecosystems vital to global sustainability.</p>
+            <img src="Img/Contents/threats_img2.jpeg" alt="Oil spill affecting marine life">
+
+            <p id="pollution"><strong>Ocean Pollution</strong></p>
+            <p>Every year, millions of tons of plastic and chemicals enter the oceans, choking marine life and disrupting ecosystems. The UNEP estimates that 80% of marine pollution comes from land-based sources.</p>
+            <img src="Img/Contents/threats_img3.jpeg" alt="Marine animal entangled in plastic">
+
+            <p id="overfishing"><strong>Overfishing</strong></p>
+            <p>Unsustainable fishing practices have depleted fish stocks, with over 33% of global fisheries exploited beyond sustainable limits, according to the UNDP. This threatens food security and livelihoods.</p>
+
+            <p id="climate"><strong>Climate Change</strong></p>
+            <p>Rising sea temperatures and ocean acidification, driven by climate change, are bleaching coral reefs and altering marine habitats. The Global Goals initiative highlights the urgent need to address these impacts.</p>
+            <img src="Img/Contents/threats_img4.jpeg" alt="Bleached coral reef">
+
+            <p>Ocean health is critical to achieving SDG 14. Collective action is essential to mitigate these threats and protect life below water.</p>
+
+            <a href="#navLinks" class="back-to-top">Back to Top</a>
+            <p id="bottom"></p>
+            <h5 class="author">Posted on March 08, 2025 by Student 1</h5>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-column">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="volunteer.html">Get Involved</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <div class="logo">
+                <img src="Img/Common/logo.png" alt="Ocean Guardians Logo">
+            </div>
+            <p>Email: <a href="mailto:info@oceanguardians.org">info@oceanguardians.org</a></p>
+            <p>Phone: +123 456 7890</p>
+        </div>
+        <div class="footer-column">
+            <h4>Page Editors</h4>
+            <ul>
+                <li><a href="pageEditor_ST1.html">Student 1: Editor Page</a></li>
+                <li><a href="pageEditor_ST2.html">Student 2: Editor Page</a></li>
+                <li><a href="pageEditor_ST3.html">Student 3: Editor Page</a></li>
+                <li><a href="pageEditor_ST4.html">Student 4: Editor Page</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        function toggleNav() {
+            const navLinks = document.getElementById("navLinks");
+            navLinks.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
