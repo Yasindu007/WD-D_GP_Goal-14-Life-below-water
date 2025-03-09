@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Validator Page Student - provide your student name</title>
 
-    <link rel="stylesheet" href="css/validation.css"> 
+    <link rel="stylesheet" href="CSS/validation.css"> 
     <link rel="stylesheet" href="CSS/Common.css">
 
 </head>
@@ -63,8 +63,12 @@
     </nav>
     <!-- Update the header and the footer to be consistent with the rest of the pages you implemented -->
 
+    <header id="top">
+        <h1>Replace the header with your teams' website header</h1>
+    </header>
+
     <section class="stud">
-        <h2>Yasindu Malith</h2>
+        <h2>Yasindu Malith, student No 1</h2>
     </section>
 
     <div class="container">
@@ -120,30 +124,66 @@
                         <li><a href="#volunteerVal">Volunteer page validation</a></li>
                         <li><a href="#contentVal">Content page validation</a></li>
                     </ul>
-                <li>Student 2</li>
-                    <ul>
-                        <li><a href="#">Home page </a></li>
-                        <li><a href="#">Table page</a></li>
-                        <li><a href="#">Content page</a></li>
-                    </ul>
-                <li>Student 3</li>
-                    <ul>
-                        <li><a href="#">Feedback page</a> </li>
-                        <li><a href="#">Team page</a></li>
-                        <li><a href="#">Content page</a></li>
-                    </ul>
-                <li>Student 4</li>
-                    <ul>
-                        <li><a href="#">Profile page </a></li>
-                        <li><a href="#">Sitemap page</a></li>
-                        <li><a href="#">Content page</a></li>
-                    </ul>
             </ul>
         </aside>
     </div>
 
     <footer>
-        <p>Replace the footer with your teams' website footer</p>
+        <div class="footer-column">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="volunteer.html">Get Involved</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Content Pages</h4>
+            <ul>
+                <li><a href="https://www.globalgoals.org/terms-conditions/">Conditions</a></li>
+                <li><a href="https://www.globalgoals.org/privacy-policy/">Privacy Policy</a></li>
+                <li><a href="https://www.globalgoals.org/cookies/">Cookies</a></li>
+                <li><a href="https://www.globalgoals.org/anti-corruption/">Anti Corruption</a></li>
+                <li><a href="https://www.globalgoals.org/asset-licence/">Asset License</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <div class="logo">
+                <img src="Img/Common/logo.png" alt="Ocean Guardians Logo">
+            </div>
+            <p>Email: <a href="mailto:info@oceanguardians.org">info@oceanguardians.org</a></p>
+            <p>Phone: +123 456 7890</p>
+        </div>
+        <div class="footer-column">
+            <h4>Content Pages</h4>
+            <ul>
+                <li><a href="content_ST1.html">Content 01</a></li>
+                <li><a href="content_ST2.html">Content 02</a></li>
+                <li><a href="content_ST3.html">Content 03</a></li>
+                <li><a href="content_ST4.html">Content 04</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Page Editors</h4>
+            <ul>
+                <li><a href="pageEditor_ST1.html">Student 1: Editor Page</a></li>
+                <li><a href="pageEditor_ST2.html">Student 2: Editor Page</a></li>
+                <li><a href="pageEditor_ST3.html">Student 3: Editor Page</a></li>
+                <li><a href="pageEditor_ST4.html">Student 4: Editor Page</a></li>
+            </ul>
+        </div>
     </footer>
+    
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script>
+    function toggleNav() {
+        const navLinks = document.getElementById("navLinks");
+        navLinks.classList.toggle("active");
+    }
+    </script>
 </body>
 </html>

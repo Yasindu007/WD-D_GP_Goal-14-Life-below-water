@@ -3,6 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #CBDCEB;
 }
 
 .container {
@@ -11,22 +12,27 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    border-radius: 15px;
 }
 main {
-    flex: 3;
+    flex: 4;
+    border-radius: 15px;
+    
 }
 aside {
-    flex: 1;
-    background-color: #f4f4f4;
+    flex: 0.4;
+    background-color: #CBDCEB;
     padding: 15px;
     border: 1px solid #ddd;
     margin-right: 20px;
+    border-radius: 15px;
 }
 section {
     margin-bottom: 20px;
     padding: 15px;
     border: 1px solid #ddd;
-    background-color: #fafafa;
+    background-color: white;
+    border-radius: 15px;
 }
 header, footer {
     text-align: center;
@@ -51,8 +57,8 @@ aside li{
 .stud {
     text-align: center;
     line-height: 0;
-    background-color: #F3F3E0;
-    color: white;
+    background-color: #608BC1;
+    color: #CBDCEB;
     margin-top: 8px;
 }
 
