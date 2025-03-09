@@ -8,36 +8,37 @@
     <link rel="stylesheet" href="CSS/Common.css">
 </head>
 <body>
-   <!-- Header -->
-   <nav>
-    <div class="logo">
-        <img src="Img/Common/logo.png" alt="Ocean Guardians Logo">
-    </div>
-    <div class="right-content">
-        <div class="search-bar">
-            <input type="text" placeholder="Search...">
-            <img src="Img/Common/search.png" alt="Search" class="icon"> 
+    <!-- Header -->
+    <nav>
+        <div class="logo">
+            <img src="Img/Common/logo.png" alt="Ocean Guardians Logo">
         </div>
-        <div class="hamburger" onclick="toggleNav()">
-            <div></div>
-            <div></div>
-            <div></div>
+        <div class="right-content">
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <img src="Img/Common/search.png" alt="Search" class="icon"> 
+            </div>
+            <div class="hamburger" onclick="toggleNav()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a href="home.html"><img src="Img/Common/home.png" alt="Home" class="icon"> Home</a>
+                <a href="volunteer.html"><img src="Img/Common/volunteer.png" alt="Get Involved" class="icon"> Get Involved</a>
+                <a href="table.html"><img src="Img/Common/table.png" alt="Table" class="icon"> Table</a>
+                <a href="profile.html"><img src="Img/Common/account.png" alt="Profile" class="icon"> Profile</a>
+                <a href="feedback.html"><img src="Img/Common/feedback.png" alt="Feedback" class="icon"> Feedback</a>
+                <a href="team.html"><img src="Img/Common/team.png" alt="Our Team" class="icon"> Our Team</a>
+                <a href="sitemap.html"><img src="Img/Common/sitemap.png" alt="Sitemap" class="icon"> Sitemap</a>
+            </div>
         </div>
-        <div class="nav-links" id="navLinks">
-            <a href="home.html"><img src="Img/Common/home.png" alt="Home" class="icon"> Home</a>
-            <a href="volunteer.html"><img src="Img/Common/volunteer.png" alt="Get Involved" class="icon"> Get Involved</a>
-            <a href="table.html"><img src="Img/Common/table.png" alt="Table" class="icon"> Table</a>
-            <a href="profile.html"><img src="Img/Common/account.png" alt="Profile" class="icon"> Profile</a>
-            <a href="feedback.html"><img src="Img/Common/feedback.png" alt="Feedback" class="icon"> Feedback</a>
-            <a href="team.html"><img src="Img/Common/team.png" alt="Our Team" class="icon"> Our Team</a>
-            <a href="sitemap.html"><img src="Img/Common/sitemap.png" alt="Sitemap" class="icon"> Sitemap</a>
-        </div>
-    </div>
-</nav>
+    </nav>
 
     <!-- Image Container with Animation -->
     <div class="image-container">
-        <img src="Img/home/background.jpg" alt="background" class="background_image">
+        <img src="Img/home/background.jpg" alt="Ocean Background" class="background_image">
+        <div class="filter-overlay"></div>
         <div class="topic_text">Life Below Water</div>
         <div class="subtopic_text">
             <p>
@@ -78,7 +79,7 @@
             <img src="Img/home/card1.jpeg" alt="Card Image 1">
             <h2 class="card-title">Threats to Life <br>Below Water</h2>
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <a href="pageEditor_st1.html" class="card-button">Learn More</a>
+            <a href="pageEditor_ST1.html" class="card-button">Learn More</a>
         </div>
 
         <!-- Card 2 -->
@@ -86,7 +87,7 @@
             <img src="Img/home/card2.jpeg" alt="Card Image 2">
             <h2 class="card-title">Marine<br> Biodiversity</h2>
             <p class="card-text">Integer at justo nec justo ullamcorper dapibus.</p>
-            <a href="pageEditor_st1.html" class="card-button">Learn More</a>
+            <a href="pageEditor_ST1.html" class="card-button">Learn More</a>
         </div>
 
         <!-- Card 3 -->
@@ -94,7 +95,7 @@
             <img src="Img/home/card3.jpeg" alt="Card Image 3">
             <h2 class="card-title">Ocean Conservation Efforts</h2>
             <p class="card-text">Phasellus vel libero vel odio dapibus tincidunt.</p>
-            <a href="pageEditor_st1.html" class="card-button">Learn More</a>
+            <a href="pageEditor_ST1.html" class="card-button">Learn More</a>
         </div>
 
         <!-- Card 4 -->
@@ -102,9 +103,10 @@
             <img src="Img/home/card4.jpeg" alt="Card Image 4">
             <h2 class="card-title">Sustainable Fishing Practices</h2>
             <p class="card-text">Vestibulum ante ipsum primis in faucibus orci luctus.</p>
-            <a href="pageEditor_st1.html" class="card-button">Learn More</a>
+            <a href="pageEditor_ST1.html" class="card-button">Learn More</a>
         </div>
     </div>
+
     <footer>
         <div class="footer-column">
             <h4>Quick Links</h4>
@@ -132,7 +134,7 @@
             <div class="logo">
                 <img src="Img/Common/logo.png" alt="Ocean Guardians Logo">
             </div>
-            <p>Email: <a href="mailto:info@oceanguardians.org">info@oceanguardians.org</a></p>
+            <p>Email: <a href="/cdn-cgi/l/email-protection#">[email&#160;protected]</a></p>
             <p>Phone: +123 456 7890</p>
         </div>
         <div class="footer-column">
@@ -154,14 +156,12 @@
             </ul>
         </div>
     </footer>
-    
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+
     <script>
     function toggleNav() {
         const navLinks = document.getElementById("navLinks");
         navLinks.classList.toggle("active");
     }
     </script>
-
 </body>
 </html>

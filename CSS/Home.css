@@ -5,15 +5,77 @@
   box-sizing: border-box;
 }
 
+/* Navigation Bar Styling */
+nav {
+  background-color: #1e90ff; /* Consistent with your marine theme */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative; /* Remove fixed positioning unless intentional */
+  z-index: 10; /* Ensure nav stays above other content */
+  width: 100%;
+}
 
+.logo img {
+  height: 40px; /* Adjust logo size as needed */
+}
 
-/* Image container */
+.right-content {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  margin-right: 20px;
+}
+
+.search-bar input {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+.icon {
+  height: 20px; /* Adjust icon size */
+  vertical-align: middle;
+}
+
+.hamburger {
+  display: none; /* Hide hamburger for now; style it for mobile later */
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  margin-left: 10px;
+}
+
+.nav-links a:hover {
+  background-color: #3498db;
+}
+
+/* Image container with proper spacing */
 .image-container {
-  padding-top: 300px;
+  padding-top: 60px; /* Matches nav height + extra space */
   position: relative;
   width: 100%;
-  height: auto;
-  overflow: hidden; 
+  min-height: 500px; /* Ensure container has a minimum height */
+  overflow: hidden;
 }
 
 /* Background image with a subtle zoom-in animation */
@@ -22,7 +84,7 @@
   height: auto;
   display: block;
   animation: slowZoom 10s ease-in-out infinite alternate;
-  z-index: 2;
+  z-index: 1; /* Below overlay but visible */
 }
 
 /* Dark overlay with fade-in effect */
@@ -34,13 +96,13 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   animation: fadeIn 2s ease-in-out;
-
+  z-index: 2; /* Above image but below text */
 }
 
 /* Topic text animation */
 .topic_text {
   position: absolute;
-  top: 5%;
+  top: 10%; /* Adjusted for better positioning below nav */
   left: 5%;
   color: white;
   font-size: 3rem;
@@ -48,18 +110,20 @@
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
   opacity: 0;
   animation: fadeSlide 1.5s ease-out forwards 1s;
+  z-index: 3; /* Above overlay */
 }
 
 /* Subtopic text animation */
 .subtopic_text {
   position: absolute;
-  top: 20%;
+  top: 25%; /* Adjusted for better spacing */
   left: 5%;
   color: white;
   font-size: 25px;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
   opacity: 0;
   animation: fadeSlide 1.5s ease-out forwards 1.8s;
+  z-index: 3; /* Above overlay */
 }
 
 /* Background slow zoom effect */
@@ -101,7 +165,7 @@
   padding: 30px 0;
 }
 
-.mission_header{
+.mission_header {
   font-size: 3rem;
   margin-bottom: 20px;
 }
@@ -178,4 +242,30 @@
 .card:hover .card-title,
 .card:hover .card-text {
   color: white;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #1e90ff;
+    flex-direction: column;
+    width: 200px;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  .nav-links a {
+    padding: 15px;
+    margin: 0;
+  }
+  .image-container {
+    padding-top: 70px; /* Adjust for mobile nav */
+  }
 }
