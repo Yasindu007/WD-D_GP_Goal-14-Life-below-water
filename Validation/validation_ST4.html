@@ -11,11 +11,32 @@
 </head>
 <body>
     
-    <!-- Update the header and the footer to be consistent with the rest of the pages you implemented -->
+    <nav>
+        <div class="logo">
+            <img src="Img/Common/logo.png" alt="Ocean Guardians Logo">
+        </div>
+        <div class="right-content">
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <img src="Img/Common/search.png" alt="Search" class="icon"> 
+            </div>
+            <div class="hamburger" onclick="toggleNav()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a href="home.html"><img src="Img/Common/home.png" alt="Home" class="icon"> Home</a>
+                <a href="volunteer.html"><img src="Img/Common/volunteer.png" alt="Get Involved" class="icon"> Get Involved</a>
+                <a href="table.html"><img src="Img/Common/table.png" alt="Table" class="icon"> Table</a>
+                <a href="profile.html"><img src="Img/Common/account.png" alt="Profile" class="icon"> Profile</a>
+                <a href="feedback.html"><img src="Img/Common/feedback.png" alt="Feedback" class="icon"> Feedback</a>
+                <a href="team.html"><img src="Img/Common/team.png" alt="Our Team" class="icon"> Our Team</a>
+                <a href="sitemap.html"><img src="Img/Common/sitemap.png" alt="Sitemap" class="icon"> Sitemap</a>
+            </div>
+        </div>
+    </nav>
 
-    <header id="top">
-        <h1>Replace the header with your teams' website header</h1>
-    </header>
 
     <section class="stud">
         <h2>Student name, student role</h2>
@@ -68,7 +89,7 @@
         <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
             <ul class="top-level-ul">
                 <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
-                <li>Student 1</li>
+                <li>Student 4</li>
                     <ul> 
                         <li><a href="#splashVal">Splash page validation</a></li>
                         <li><a href="#volunteerVal">Volunteer page validation</a></li>
@@ -96,8 +117,8 @@
         </aside>
     </div>
 
-    <!-- Footer -->
- <footer>
+  <!-- Footer -->
+  <footer>
     <div class="footer-column">
         <h4>Quick Links</h4>
         <ul>
@@ -108,6 +129,16 @@
             <li><a href="feedback.html">Feedback</a></li>
             <li><a href="team.html">Our Team</a></li>
             <li><a href="sitemap.html">Sitemap</a></li>
+        </ul>
+    </div>
+    <div class="footer-column">
+        <h4>Content Pages</h4>
+        <ul>
+            <li><a href="https://www.globalgoals.org/terms-conditions/">Conditions</a></li>
+            <li><a href="https://www.globalgoals.org/privacy-policy/">Privacy Policy</a></li>
+            <li><a href="https://www.globalgoals.org/cookies/">Cookies</a></li>
+            <li><a href="https://www.globalgoals.org/anti-corruption/">Anti Corruption</a></li>
+            <li><a href="https://www.globalgoals.org/asset-licence/">Asset License</a></li>
         </ul>
     </div>
     <div class="footer-column">
@@ -137,11 +168,12 @@
     </div>
 </footer>
 
-    <script>
-        function toggleNav() {
-            const navLinks = document.getElementById("navLinks");
-            navLinks.classList.toggle("active");
-        }
-    </script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<script>
+function toggleNav() {
+    const navLinks = document.getElementById("navLinks");
+    navLinks.classList.toggle("active");
+}
+</script>
 </body>
 </html>

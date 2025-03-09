@@ -5,13 +5,125 @@
   box-sizing: border-box;
 }
 
-/* Image container */
+/* Body */
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background-color: #f0f8ff;
+  color: #333;
+}
+
+/* Navigation Bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #133E87; /* Dark blue theme */
+  position: fixed; /* Fixed to top */
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Keep navbar above other content */
+}
+
+.logo img {
+  height: 50px; /* Adjust based on your logo size */
+  width: auto;
+}
+
+.right-content {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.search-bar input {
+  padding: 5px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.search-bar .icon {
+  height: 20px;
+  width: 20px;
+  padding: 5px;
+  background-color: #608BC1; /* Mid blue */
+  border-radius: 0 5px 5px 0;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 2px 0;
+  transition: 0.4s;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a:hover {
+  background-color: #2980b9;
+}
+
+.nav-links .icon {
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+}
+
+.nav-links.active {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: #133E87;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+  .nav-links {
+    display: none;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+}
+
+/* Image Container */
 .image-container {
   position: relative;
   width: 100%;
   height: auto;
   overflow: hidden;
-  
+  margin-top: 70px; /* Space below navbar to prevent overlap */
 }
 
 /* Background image with a subtle zoom-in animation */
@@ -95,11 +207,13 @@
   text-align: center;
   background-color: white;
   padding: 30px 0;
+  margin-top: 70px; /* Space below navbar to prevent overlap */
 }
 
-.mission_header{
+.mission_header {
   font-size: 3rem;
   margin-bottom: 20px;
+  color: #133E87; /* Matching theme */
 }
 
 .mission_text {
@@ -140,6 +254,19 @@
   border-radius: 10px 10px 0 0;
 }
 
+/* Card title and text */
+.card-title {
+  color: #133E87;
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.card-text {
+  color: #666;
+  font-size: 0.9em;
+  padding: 0 10px 10px;
+}
+
 /* Card button fix */
 .card-button {
   background: #007bff;
@@ -167,4 +294,81 @@
 .card:hover .card-title,
 .card:hover .card-text {
   color: white;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #133E87;
+  color: white;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+  text-align: left;
+}
+
+.footer-column h4 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin: 5px 0;
+}
+
+.footer-column ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Center the logo and text in the second footer column */
+.footer-column:nth-child(2) {
+  text-align: center;
+}
+
+.footer-column:nth-child(2) .logo img {
+  display: block;
+  margin: 0 auto 10px; /* Center the logo */
+  height: 50px; /* Adjust based on your logo size */
+  width: auto;
+}
+
+.footer-column:nth-child(2) p {
+  margin: 5px 0;
+  text-align: center;
+}
+
+.footer-column:nth-child(2) a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-column:nth-child(2) a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .card { width: 45%; }
+  .topic_text { font-size: 1.8em; }
+  .subtopic_text { font-size: 1em; top: 15%; }
+  .mission_header { font-size: 2rem; }
+  .mission_text { font-size: 1.2rem; }
+  footer { flex-direction: column; text-align: center; }
+  .footer-column { text-align: center; }
+  .footer-column:nth-child(2) .logo img { margin: 0 auto; }
 }
