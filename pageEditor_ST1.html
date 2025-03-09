@@ -6,98 +6,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page Editor Student - provide your student name</title>
 
-    <link rel="stylesheet" href="CSS/pageEditor_validator.css"> <!-- External CSS link -->
+    <link rel="stylesheet" href="CSS/pageEditor_validator.css">
+    <link rel="stylesheet" href="CSS/Common.css" />
+    <!-- External CSS link -->
 
 </head>
 <body>
+    <nav>
+        <div class="logo">
+            <img src="Img/Common/logo.png" alt="Ocean Guardians Logo">
+        </div>
+        <div class="right-content">
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <img src="Img/Common/search.png" alt="Search" class="icon"> 
+            </div>
+            <div class="hamburger" onclick="toggleNav()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a href="home.html"><img src="Img/Common/home.png" alt="Home" class="icon"> Home</a>
+                <a href="volunteer.html"><img src="Img/Common/volunteer.png" alt="Get Involved" class="icon"> Get Involved</a>
+                <a href="table.html"><img src="Img/Common/table.png" alt="Table" class="icon"> Table</a>
+                <a href="profile.html"><img src="Img/Common/account.png" alt="Profile" class="icon"> Profile</a>
+                <a href="feedback.html"><img src="Img/Common/feedback.png" alt="Feedback" class="icon"> Feedback</a>
+                <a href="team.html"><img src="Img/Common/team.png" alt="Our Team" class="icon"> Our Team</a>
+                <a href="sitemap.html"><img src="Img/Common/sitemap.png" alt="Sitemap" class="icon"> Sitemap</a>
+            </div>
+        </div>
+    </nav>
     
-    <!-- Update the header and the footer to be consistent with the rest of the pages you implemented -->
 
-    <header id="top">
-        <h1>Replace the header with your teams' website header</h1>
-    </header>
 
     <section class="stud">
-        <h2>Student name, student role</h2>
+        <h2>Yasindu De Silva, Splash & Volunteer Developer</h2>
     </section>
 
     <div class="container">
-        <!-- Main content area -->
         <main>
-
-            <!-- Update those first three sections for the pages you were responsible to implement -->
-
             <section>
                 <h2 id="splash">Splash Page</h2>
-                    <h3>Technical Description</h3>
-                        <p>Explain the HTML and CSS techniques used to implement this page. Justify the logic and purpose of the key tags and styling choices focusing on functionality and design without copying large code sections. Explain the purpose of key HTML tags and CSS properties. Specify key HTML tags and CSS properties used to create structure and styling.</p> 
-                    
-                    <h3>Accessibility</h3>
-                        <p>Explain how you used to addressed accessibility in this particular page you implemented.</p>
-                    
-                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
-                        <p><a href="validation_ST0.html#splashVal">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+                <h3>Technical Description</h3>
+                <p>I used a meta tag (<code>&lt;meta http-equiv="refresh" content="4;url=home.html"&gt;</code>) to redirect to the home page after 4 seconds. The loader animation was created using CSS with a spinning border effect (<code>border-top</code> and <code>animation: spin</code>). The background image of the ocean enhances the marine theme, styled with <code>background: url()</code>.</p> 
+                
+                <h3>Accessibility</h3>
+                <p>The page includes semantic HTML (e.g., <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>) and a clear color contrast between text and background for readability.</p>
+                
+                <h3>Link to the validation page</h3>
+                <p><a href="validation_ST1.html#splashVal">Validation for Splash Page</a></p>
 
-                    <h3>Link to the page</h3>
-                        <p><a href="splash.html">Include a link to the actual page you describe.</a></p>
+                <h3>Link to the page</h3>
+                <p><a href="splash.html" target="_blank">Splash Page</a></p>
             </section>
 
             <section>
                 <h2 id="volunteer">Volunteer Page</h2>
-                    <h3>Technical Description</h3>
-                        <p>Explain the HTML and CSS techniques used to implement this page. Justify the logic and purpose of the key tags and styling choices focusing on functionality and design without copying large code sections. Explain the purpose of key HTML tags and CSS properties. Specify key HTML tags and CSS properties used to create structure and styling.</p> 
+                <h3>Technical Description</h3>
+                <p>The Volunteer Page uses a flexbox layout for the program cards (<code>display: flex; flex-wrap: wrap;</code>). The scrollable section is implemented with <code>max-height</code> and <code>overflow-y: auto</code>. Buttons have hover effects using <code>transition</code> and <code>transform: scale</code>. The star rating uses JavaScript to toggle colors on hover.</p> 
 
-                    <h3>Accessibility</h3>
-                        <p>Explain how you used to addressed accessibility in this particular page you implemented.</p>
+                <h3>Accessibility</h3>
+                <p>Buttons include <code>aria-label</code> attributes, and the form uses semantic elements like <code>&lt;label&gt;</code> and <code>&lt;fieldset&gt;</code> for screen reader support.</p>
 
-                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
-                        <p><a href="validation_ST0.html#volunteerVal">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
-
-                        
-                    <h3>Link to the page</h3>
-                        <p><a href="volunteer.html">Include a link to the actual page you describe.</a></p>
+                <h3>Link to the validation page</h3>
+                <p><a href="validation_ST1.html#volunteerVal">Validation for Volunteer Page</a></p>
+                
+                <h3>Link to the page</h3>
+                <p><a href="volunteer.html" target="_blank">Volunteer Page</a></p>
             </section>
 
             <section>
                 <h2 id="content">Content Page</h2>
-                    <h3>Technical Description</h3>
-                        <p>Explain the HTML and CSS techniques used to implement this page. Justify the logic and purpose of the key tags and styling choices focusing on functionality and design without copying large code sections. Explain the purpose of key HTML tags and CSS properties. Specify key HTML tags and CSS properties used to create structure and styling.</p> 
+                <h3>Technical Description</h3>
+                <p>The Content Page uses internal linking with anchor tags (<code>&lt;a href="#section"&gt;</code>) and a sticky sidebar for navigation (<code>position: sticky</code>). Images are styled with borders (<code>border: 2px solid</code>) and include <code>alt</code> text for accessibility.</p> 
 
-                    <h3>Accessibility</h3>
-                        <p>Explain how you used to addressed accessibility in this particular page you implemented.</p>
+                <h3>Accessibility</h3>
+                <p>Headings follow a logical hierarchy (<code>&lt;h1&gt;</code> to <code>&lt;h3&gt;</code>), and the sidebar navigation is keyboard-accessible with <code>tabindex</code>.</p>
 
-                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
-                        <p><a href="validation_ST0.html#contentVal">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
-
-                        
-                    <h3>Link to the page</h3>
-                        <p><a href="content.html">Include a link to the actual page you describe.</a></p>
+                <h3>Link to the validation page</h3>
+                <p><a href="validation_ST1.html#contentVal">Validation for Content Page</a></p>
+                
+                <h3>Link to the page</h3>
+                <p><a href="content_ST1.html" target="_blank">Content Page</a></p>
             </section>
 
             <section>
-                <h2 id="challenge"> Challenges and Lessons Learned</h2>
-                    <p>Detail any challenges encountered during the implementation process and explain how they were resolved. Reflect on the lessons learned from overcoming these challenges.</p> 
+                <h2 id="challenge">Challenges and Lessons Learned</h2>
+                <p>Implementing the loader animation was challenging due to CSS timing issues, but I resolved it by adjusting the <code>animation</code> duration. I learned the importance of testing on multiple devices for responsiveness.</p> 
             </section>
 
             <section>
-                <h2 id="compliance"> Compliance</h2>
-                    <p>Discuss how the pages you have created are compliant with Janet regulations governing web page publication. This includes demonstrating your understanding and application of these regulations. Be realistic and truthful.</p> 
-
-                    
+                <h2 id="compliance">Compliance</h2>
+                <p>My pages comply with Janet regulations by ensuring proper file naming (e.g., splash.html) and validating HTML/CSS with no errors. I also adhered to accessibility guidelines.</p> 
             </section>
 
             <section>
                 <h2 id="ref">References</h2>
-                <p>Provide links to resources you used following a consistent format (e.g., APA, MLA, or a simplified style). For example:<br><br>
-                    <ul class="ref">
-                        <li>iStock (2025) <i>iStock.</i> Available at: <a href="#">https://www.istockphoto.com/</a> (Last accessed: 11 Feb 2025).</li>
-                        <li>Duckett, J., 2011. HTML and CSS: Design and Build Websites,<i>John Willey&Sons. Inc. Indianappolis.</i></li>
-                    </ul>
+                <ul class="ref">
+                    <li>Global Goals (2025). <i>Life Below Water.</i> Available at: <a href="https://www.globalgoals.org/goals/14-life-below-water/">https://www.globalgoals.org/goals/14-life-below-water/</a> (Last accessed: 07 Mar 2025).</li>
+                    <li>Volunteer World (2025). <i>Goal 14 Volunteer Programs.</i> Available at: <a href="https://www.volunteerworld.com/en/volunteer-abroad/goal-14-life-below-water">https://www.volunteerworld.com/en/volunteer-abroad/goal-14-life-below-water</a> (Last accessed: 07 Mar 2025).</li>
+                </ul>
             </section>
 
             <p class="top"><a href="#top">Go top</a></p>
         </main>
-
         <!-- Sidebar area -->
         <aside>
             <h3>Core pages developed:</h3>
@@ -107,27 +120,27 @@
                 <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
                 <li>Student 1</li>
                     <ul> 
-                        <li><a href="#splash">Splash page</a></li>
-                        <li><a href="#volunteer">Volunteer page</a></li>
-                        <li><a href="#content">Content page</a></li>
+                        <li><a href="splash.html">Splash page</a></li>
+                        <li><a href="Volunteer.html">Volunteer page</a></li>
+                        <li><a href="content_ST1.html">Content page</a></li>
                     </ul>
                 <li>Student 2</li>
                     <ul>
-                        <li><a href="#">Home page </a></li>
-                        <li><a href="#">Table page</a></li>
-                        <li><a href="#">Content page</a></li>
+                        <li><a href="home.html">Home page </a></li>
+                        <li><a href="table.html">Table page</a></li>
+                        <li><a href="content_ST2.html">Content page</a></li>
                     </ul>
                 <li>Student 3</li>
                     <ul>
-                        <li><a href="#">Feedback page</a> </li>
-                        <li><a href="#">Team page</a></li>
-                        <li><a href="#">Content page</a></li>
+                        <li><a href="feedback">Feedback page</a> </li>
+                        <li><a href="team.html">Team page</a></li>
+                        <li><a href="content_ST3.html">Content page</a></li>
                     </ul>
                 <li>Student 4</li>
                     <ul>
-                        <li><a href="#">Profile page </a></li>
-                        <li><a href="#">Sitemap page</a></li>
-                        <li><a href="#">Content page</a></li>
+                        <li><a href="profile.html">Profile page </a></li>
+                        <li><a href="sitemap.html">Sitemap page</a></li>
+                        <li><a href="content_ST4.html">Content page</a></li>
                     </ul>
                 <li><a href="#challenge">Challenges and Lessons Learned</a></li>
                 <li><a href="#compliance">Compliance</a></li>
@@ -136,8 +149,55 @@
         </aside>
     </div>
 
+    <!-- Footer -->
     <footer>
-        <p>Replace the footer with your teams' website footer</p>
+        <div class="footer-column">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="volunteer.html">Get Involved</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <div class="logo">
+                <img src="Img/Common/logo.png" alt="Ocean Guardians Logo">
+            </div>
+            <p>Email: <a href="mailto:info@oceanguardians.org">info@oceanguardians.org</a></p>
+            <p>Phone: +123 456 7890</p>
+        </div>
+        <div class="footer-column">
+            <h4>Content Pages</h4>
+            <ul>
+                <li><a href="content_ST1.html">Content 01</a></li>
+                <li><a href="content_ST2.html">Content 02</a></li>
+                <li><a href="content_ST3.html">Content 03</a></li>
+                <li><a href="content_ST4.html">Content 04</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Page Editors</h4>
+            <ul>
+                <li><a href="pageEditor_ST1.html">Student 1: Editor Page</a></li>
+                <li><a href="pageEditor_ST2.html">Student 2: Editor Page</a></li>
+                <li><a href="pageEditor_ST3.html">Student 3: Editor Page</a></li>
+                <li><a href="pageEditor_ST4.html">Student 4: Editor Page</a></li>
+            </ul>
+        </div>
     </footer>
+    
+        <script>
+            function toggleNav() {
+                const navLinks = document.getElementById("navLinks");
+                navLinks.classList.toggle("active");
+            }
+        </script>
+    </body>
+
+
 </body>
 </html>

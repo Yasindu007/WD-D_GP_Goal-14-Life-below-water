@@ -1,0 +1,53 @@
+.internal-nav {
+    position: sticky;
+    top: 20px;
+    float: left;
+    width: 200px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+}
+
+.internal-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.internal-nav a {
+    text-decoration: none;
+    color: #3498db;
+}
+
+.internal-nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    margin-left: 240px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border: 2px solid #3498db;
+    border-radius: 8px;
+}
+
+.go-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.go-top a {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+}

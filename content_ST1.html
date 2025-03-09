@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Page - Life Below Water</title>
+    <link rel="stylesheet" href="css/common.css"> <!-- Global CSS -->
+    <link rel="stylesheet" href="css/content.css"> <!-- Content-specific CSS -->
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="Img/Common/logo.png" alt="Ocean Guardians Logo">
+        </div>
+        <div class="right-content">
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <img src="Img/Common/search.png" alt="Search" class="icon"> 
+            </div>
+            <div class="hamburger" onclick="toggleNav()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a href="home.html"><img src="Img/Common/home.png" alt="Home" class="icon"> Home</a>
+                <a href="volunteer.html"><img src="Img/Common/volunteer.png" alt="Get Involved" class="icon"> Get Involved</a>
+                <a href="table.html"><img src="Img/Common/table.png" alt="Table" class="icon"> Table</a>
+                <a href="profile.html"><img src="Img/Common/account.png" alt="Profile" class="icon"> Profile</a>
+                <a href="feedback.html"><img src="Img/Common/feedback.png" alt="Feedback" class="icon"> Feedback</a>
+                <a href="team.html"><img src="Img/Common/team.png" alt="Our Team" class="icon"> Our Team</a>
+                <a href="sitemap.html"><img src="Img/Common/sitemap.png" alt="Sitemap" class="icon"> Sitemap</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <main>
+            <aside class="internal-nav">
+                <h3>Sections</h3>
+                <ul>
+                    <li><a href="#intro">Introduction</a></li>
+                    <li><a href="#threats">Threats to Marine Life</a></li>
+                    <li><a href="#actions">Actions We Can Take</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                </ul>
+            </aside>
+
+            <section id="intro">
+                <h2>Introduction to Life Below Water</h2>
+                <p>The oceans cover more than 70% of the Earth's surface and are home to millions of species. UN Goal 14 aims to conserve and sustainably use the oceans, seas, and marine resources.</p>
+                <img src="images/ocean-life.jpg" alt="Diverse marine life in the ocean">
+            </section>
+
+            <section id="threats">
+                <h2>Threats to Marine Life</h2>
+                <p>Marine ecosystems face numerous threats, including plastic pollution, overfishing, and climate change.</p>
+                <img src="images/plastic-pollution.jpg" alt="Plastic waste in the ocean">
+                <img src="images/overfishing.jpg" alt="Overfishing impacting fish populations">
+            </section>
+
+            <section id="actions">
+                <h2>Actions We Can Take</h2>
+                <p>Individuals can help by reducing plastic use, supporting sustainable seafood, and participating in beach cleanups.</p>
+                <img src="images/beach-cleanup.jpg" alt="Volunteers cleaning a beach">
+            </section>
+
+            <section id="resources">
+                <h2>Resources</h2>
+                <p>Learn more about marine conservation through these organizations:</p>
+                <ul>
+                    <li><a href="https://www.oceanconservancy.org/">Ocean Conservancy</a></li>
+                    <li><a href="https://www.wwf.org/">WWF</a></li>
+                </ul>
+            </section>
+
+            <p class="go-top"><a href="#top">Go to Top</a></p>
+        </main>
+    </div>
+
+    <footer>
+        <p>Team Ocean | <a href="pageEditor_ST1.html">Student 1 Page Editor</a> | Accessibility: Compliant with WCAG 2.1</p>
+    
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="volunteer.html">Get Involved</a></li>
+                    <li><a href="table.html">Table</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <div class="logo">
+                    <img src="Img/Common/logo.png" alt="Ocean Guardians Logo">
+                </div>
+                <p>Email: <a href="mailto:info@oceanguardians.org">info@oceanguardians.org</a></p>
+                <p>Phone: +123 456 7890</p>
+            </div>
+            <div class="footer-column">
+                <h4>Content Pages</h4>
+                <ul>
+                    <li><a href="content_ST1.html">Content 01</a></li>
+                    <li><a href="content_ST2.html">Content 02</a></li>
+                    <li><a href="content_ST3.html">Content 03</a></li>
+                    <li><a href="content_ST4.html">Content 04</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Page Editors</h4>
+                <ul>
+                    <li><a href="pageEditor_ST1.html">Student 1: Editor Page</a></li>
+                    <li><a href="pageEditor_ST2.html">Student 2: Editor Page</a></li>
+                    <li><a href="pageEditor_ST3.html">Student 3: Editor Page</a></li>
+                    <li><a href="pageEditor_ST4.html">Student 4: Editor Page</a></li>
+                </ul>
+            </div>
+        </footer>
+    
+        <script>
+            function toggleNav() {
+                const navLinks = document.getElementById("navLinks");
+                navLinks.classList.toggle("active");
+            }
+        </script>
+</body>
+</html>
