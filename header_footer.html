@@ -12,55 +12,32 @@
 </head>
 <body>
     
-    <nav>
-        <div class="logo">
-            <img src="Img/Common/logo.png" alt="Logo">
+  <!-- Header -->
+  <nav>
+    <div class="logo">
+        <img src="Img/Common/logo.png" alt="Ocean Guardians Logo">
+    </div>
+    <div class="right-content">
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <img src="Img/Common/search.png" alt="Search" class="icon"> 
         </div>
-
-        <div class="right-content">
-            <div class="search-bar">
-                <input type="text" placeholder="Search...">
-                <img src="Img/Common/search.png" alt="Search" class="icon"> 
-            </div>
-
-            <div class="hamburger" onclick="toggleNav()">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-
-            <div class="nav-links" id="navLinks">
-                <a href="#">
-                    <img src="Img/Common/home.png" alt="Home" class="icon"> 
-                    Home
-                </a>
-                <a href="#">
-                    <img src="Img/Common/volunteer.png" alt="Get Involved" class="icon"> 
-                    Get Involved
-                </a>
-                <a href="#">
-                    <img src="Img/Common/table.png" alt="Table" class="icon"> 
-                    Table
-                </a>
-                <a href="#">
-                    <img src="Img/Common/account.png" alt="Profile" class="icon"> 
-                    Profile
-                </a>
-                <a href="#">
-                    <img src="Img/Common/feedback.png" alt="Feedback" class="icon"> 
-                    Feedback
-                </a>
-                <a href="#">
-                    <img src="Img/Common/team.png" alt="Our Team" class="icon"> 
-                    Our Team
-                </a>
-                <a href="#">
-                    <img src="Img/Common/sitemap.png" alt="Sitemap" class="icon">
-                    Sitemap
-                </a>
-            </div>
+        <div class="hamburger" onclick="toggleNav()">
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
-    </nav>
+        <div class="nav-links" id="navLinks">
+            <a href="home.html"><img src="Img/Common/home.png" alt="Home" class="icon"> Home</a>
+            <a href="volunteer.html"><img src="Img/Common/volunteer.png" alt="Get Involved" class="icon"> Get Involved</a>
+            <a href="table.html"><img src="Img/Common/table.png" alt="Table" class="icon"> Table</a>
+            <a href="profile.html"><img src="Img/Common/account.png" alt="Profile" class="icon"> Profile</a>
+            <a href="feedback.html"><img src="Img/Common/feedback.png" alt="Feedback" class="icon"> Feedback</a>
+            <a href="team.html"><img src="Img/Common/team.png" alt="Our Team" class="icon"> Our Team</a>
+            <a href="sitemap.html"><img src="Img/Common/sitemap.png" alt="Sitemap" class="icon"> Sitemap</a>
+        </div>
+    </div>
+</nav>
 
 
     <footer>
@@ -69,11 +46,11 @@
             <ul>
                 <li><a href="home.html">Home</a></li>
                 <li><a href="volunteer.html">Get Involved</a></li>
-                <li><a href="table.html">Table</Table></a></li>
-                <li><a href="profile.html">profile</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="profile.html">Profile</a></li>
                 <li><a href="feedback.html">Feedback</a></li>
-                <li><a href="our-team.html">Our Team</a></li>
-                <li><a href="Sitemap.html">Sitemap</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
             </ul>
         </div>
         <div class="footer-column">
@@ -88,27 +65,37 @@
         </div>
         <div class="footer-column">
             <div class="logo">
-            <img src="Img/Common/logo.png" alt="Logo">
+                <img src="Img/Common/logo.png" alt="Ocean Guardians Logo">
             </div>
-            <p>Email: <a href="mailto:lifebelowwater@gmail.com">lifebelowwatert@gmail.com</a></p>
+            <p>Email: <a href="mailto:info@oceanguardians.org">info@oceanguardians.org</a></p>
             <p>Phone: +123 456 7890</p>
+        </div>
+        <div class="footer-column">
+            <h4>Content Pages</h4>
+            <ul>
+                <li><a href="content_ST1.html">Content 01</a></li>
+                <li><a href="content_ST2.html">Content 02</a></li>
+                <li><a href="content_ST3.html">Content 03</a></li>
+                <li><a href="content_ST4.html">Content 04</a></li>
+            </ul>
         </div>
         <div class="footer-column">
             <h4>Page Editors</h4>
             <ul>
-                <li><a href="pageEditor_st1.html">Student 1: Editor Page</a></li>
-                <li><a href="pageEditor_st2.html">Student 2: Editor Page</a></li>
-                <li><a href="pageEditor_st3.html">Student 3: Editor Page</a></li>
-                <li><a href="pageEditor_st4.html">Student 4: Editor Page</a></li>
+                <li><a href="pageEditor_ST1.html">Student 1: Editor Page</a></li>
+                <li><a href="pageEditor_ST2.html">Student 2: Editor Page</a></li>
+                <li><a href="pageEditor_ST3.html">Student 3: Editor Page</a></li>
+                <li><a href="pageEditor_ST4.html">Student 4: Editor Page</a></li>
             </ul>
         </div>
     </footer>
-
+    
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script>
-        function toggleNav() {
-            const navLinks = document.getElementById("navLinks");
-            navLinks.classList.toggle("active");
-        }
+    function toggleNav() {
+        const navLinks = document.getElementById("navLinks");
+        navLinks.classList.toggle("active");
+    }
     </script>
 </body>
 </html>
