@@ -5,11 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="CSS/Home.css">
+    <link rel="stylesheet" href="CSS/Common.css" />
 </head>
 <body>
+    <!-- Header and Navigation from header_footer.html -->
+    <nav>
+        <div class="logo">
+            <img src="Img/Common/logo.png" alt="Logo">
+        </div>
+
+        <div class="right-content">
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <img src="Img/Common/search.png" alt="Search" class="icon"> 
+            </div>
+
+            <div class="hamburger" onclick="toggleNav()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <div class="nav-links" id="navLinks">
+                <a href="#">
+                    <img src="Img/Common/home.png" alt="Home" class="icon"> 
+                    Home
+                </a>
+                <a href="#">
+                    <img src="Img/Common/volunteer.png" alt="Get Involved" class="icon"> 
+                    Get Involved
+                </a>
+                <a href="#">
+                    <img src="Img/Common/table.png" alt="Table" class="icon"> 
+                    Table
+                </a>
+                <a href="#">
+                    <img src="Img/Common/account.png" alt="Profile" class="icon"> 
+                    Profile
+                </a>
+                <a href="#">
+                    <img src="Img/Common/feedback.png" alt="Feedback" class="icon"> 
+                    Feedback
+                </a>
+                <a href="#">
+                    <img src="Img/Common/team.png" alt="Our Team" class="icon"> 
+                    Our Team
+                </a>
+                <a href="#">
+                    <img src="Img/Common/sitemap.png" alt="Sitemap" class="icon">
+                    Sitemap
+                </a>
+            </div>
+        </div>
+    </nav>
     <!-- Image Container with Animation -->
     <div class="image-container">
-        <img src="images/background.jpg" alt="background" class="background_image">
+        <img src="Img/home/background.jpg" alt="background" class="background_image">
         <div class="topic_text">Life Below Water</div>
         <div class="subtopic_text">
             <p>
@@ -47,7 +98,7 @@
     <div class="card-container">
         <!-- Card 1 -->
         <div class="card">
-            <img src="images/card1.png" alt="Card Image 1">
+            <img src="Img/home/card1.png" alt="Card Image 1">
             <h2 class="card-title">Threats to Life <br>Below Water</h2>
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <button class="card-button">Learn More</button>
@@ -55,7 +106,7 @@
 
         <!-- Card 2 -->
         <div class="card">
-            <img src="images/card2.png" alt="Card Image 2">
+            <img src="Img/home/card2.png" alt="Card Image 2">
             <h2 class="card-title">Marine Biodiversity</h2>
             <p class="card-text">Integer at justo nec justo ullamcorper dapibus.</p>
             <button class="card-button">Learn More</button>
@@ -63,7 +114,7 @@
 
         <!-- Card 3 -->
         <div class="card">
-            <img src="images/card3.png" alt="Card Image 3">
+            <img src="Img/home/card3.png" alt="Card Image 3">
             <h2 class="card-title">Ocean Conservation Efforts</h2>
             <p class="card-text">Phasellus vel libero vel odio dapibus tincidunt.</p>
             <button class="card-button">Learn More</button>
@@ -71,12 +122,42 @@
 
         <!-- Card 4 -->
         <div class="card">
-            <img src="images/card4.png" alt="Card Image 4">
+            <img src="Img/home/card4.png" alt="Card Image 4">
             <h2 class="card-title">Sustainable Fishing Practices</h2>
             <p class="card-text">Vestibulum ante ipsum primis in faucibus orci luctus.</p>
             <button class="card-button">Learn More</button>
         </div>
     </div>
+    <footer>
+        <div class="footer-column">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="volunteer.html">Get Involved</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="our-team.html">Our Team</a></li>
+                <li><a href="Sitemap.html">Sitemap</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <div class="logo">
+                <img src="Img/Common/logo.png" alt="Logo">
+            </div>
+            <p>Email: <a href="/cdn-cgi/l/email-protection#1e7277787b7c7b727169697f6a7b6c5e79737f7772307d7173"><span class="__cf_email__" data-cfemail="84e8ede2e1e6e1e8ebf3f3e5f0e1f6f0c4e3e9e5ede8aae7ebe9">[email&#160;protected]</span></a></p>
+            <p>Phone: +123 456 7890</p>
+        </div>
+        <div class="footer-column">
+            <h4>Page Editors</h4>
+            <ul>
+                <li><a href="pageEditor_st1.html">Student 1: Editor Page</a></li>
+                <li><a href="pageEditor_st2.html">Student 2: Editor Page</a></li>
+                <li><a href="pageEditor_st3.html">Student 3: Editor Page</a></li>
+                <li><a href="pageEditor_st4.html">Student 4: Editor Page</a></li>
+            </ul>
+        </div>
+    </footer>
 
 </body>
 </html>
