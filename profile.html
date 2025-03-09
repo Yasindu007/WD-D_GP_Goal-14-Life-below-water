@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile Page</title>
+    <link rel="stylesheet" href="CSS/Common.css">
+    <link rel="stylesheet" href="CSS/profile.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="Img/Common/logo.png" alt="Logo">
+        </div>
+
+        <div class="right-content">
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <img src="Img/Common/search.png" alt="Search" class="icon"> 
+            </div>
+
+            <div class="hamburger" onclick="toggleNav()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <div class="nav-links" id="navLinks">
+                <a href="#">
+                    <img src="Img/Common/home.png" alt="Home" class="icon"> 
+                    Home
+                </a>
+                <a href="#">
+                    <img src="Img/Common/volunteer.png" alt="Get Involved" class="icon"> 
+                    Get Involved
+                </a>
+                <a href="#">
+                    <img src="Img/Common/table.png" alt="Table" class="icon"> 
+                    Table
+                </a>
+                <a href="#">
+                    <img src="Img/Common/account.png" alt="Profile" class="icon"> 
+                    Profile
+                </a>
+                <a href="#">
+                    <img src="Img/Common/feedback.png" alt="Feedback" class="icon"> 
+                    Feedback
+                </a>
+                <a href="#">
+                    <img src="Img/Common/team.png" alt="Our Team" class="icon"> 
+                    Our Team
+                </a>
+                <a href="#">
+                    <img src="Img/Common/sitemap.png" alt="Sitemap" class="icon">
+                    Sitemap
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Profile Container -->
+        <div class="profile-container">
+            <!-- Cover Photo -->
+            <video class="cover-photo" autoplay muted loop>
+                <source src="Img/profile/cover.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <!-- Profile Photo -->
+            <div class="profile-photo"></div>
+
+            <!-- Bio -->
+            <div class="bio"> bvwlrgfye</div>
+
+            <!-- User Info -->
+            <div class="user-info">
+                <h1>Sarah Jones</h1>
+                <p>Marine Biologist</p>
+                <p>Coastak City, Australia</p>
+            </div>
+        </div>
+
+        <!-- Hover and Skills Container -->
+        <div class="hover-skills-container">
+            <!-- Hover Effect Container -->
+            <div class="hover-container">
+                <!-- Photo -->
+                <div class="photo"></div>
+
+                <!-- Overlay -->
+                <div class="overlay">
+                    <h1>ABOUT ME..</h1>
+                    <br>
+                    <p>"Hi, I’m Marina! The ocean is my passion, and I’m on a mission to protect its beauty and biodiversity. Let’s dive in and make a difference together!"</p>
+                </div>
+            </div>
+
+            <!-- Skills Section -->
+            <div class="skills-section">
+                <h2>Skills</h2>
+                <div class="skill">
+                    <div class="skill-name">
+                        <img src="Img/profile/scuba.png" alt="Skill Icon" class="skill-icon">
+                        Scuba Diving
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">
+                        <img src="Img/profile/marine.jpg" alt="Skill Icon" class="skill-icon">
+                        Marine Research
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 60%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">
+                        <img src="Img/profile/public.png" alt="Skill Icon" class="skill-icon">
+                        Public Speaking
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">
+                        <img src="Img/profile/photography.jpg" alt="Skill Icon" class="skill-icon">
+                       Photography
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">
+                        <img src="Img/profile/management.png" alt="Skill Icon" class="skill-icon">
+                        Project Management
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Goals Section -->
+        <div class="goals-section">
+            <div class="goal">
+                <p>Protect Coral Reef</p>
+                <div class="goal-overlay">
+                    Advocate for policies that preserve and restore coral reefs worldwide.
+                </div>
+            </div>
+            <div class="goal">
+                <p>Explore the Deep Sea</p>
+                <div class="goal-overlay">
+                    Participate in a deep-sea expedition to study undiscovered species.
+                </div>
+            </div>
+            <div class="goal">
+                <p>Promote Sustainable Fishing</p>
+                <div class="goal-overlay">
+                    Advocate for and implement sustainable fishing practices to prevent overfishing and protect marine ecosystems.
+                </div>
+            </div>
+            <div class="goal">
+                <p>Reduce Plastic Pollution</p>
+                <div class="goal-overlay">
+                    Launch campaigns to reduce single-use plastics in coastal communities.
+                </div>
+            </div>
+            <div class="goal">
+                <p>Educate the Next Generation</p>
+                <div class="goal-overlay">
+                    Develop educational programs for schools to teach kids about marine life.
+                </div>
+            </div>
+        </div>
+
+        <!-- Frustrations Section -->
+        <div class="frustrations-section">
+            <h2>Frustrations</h2>
+            <div class="frustrations-container">
+                <div class="frustration">
+                    <img src="Img/profile/plastic.png" alt="Frustration Icon" class="frustration-icon">
+                    <div class="frustration-name">Plastic Polution</div>
+                </div>
+                <div class="frustration">
+                    <img src="Img/profile/climateChange.png" alt="Frustration Icon" class="frustration-icon">
+                    <div class="frustration-name">Climate Change</div>
+                </div>
+                <div class="frustration">
+                    <img src="Img/profile/enequality.png" alt="Frustration Icon" class="frustration-icon">
+                    <div class="frustration-name">Social Enequality</div>
+                </div>
+                <div class="frustration">
+                    <img src="Img/profile/coral.jpg" alt="Frustration Icon" class="frustration-icon">
+                    <div class="frustration-name">Coral Bleaching</div>
+                </div>
+                <div class="frustration">
+                    <img src="Img/profile/overfishing.png" alt="Frustration Icon" class="frustration-icon">
+                    <div class="frustration-name">Overfishing</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Experience and Achievements Section -->
+        <div class="experience-achievements-section">
+            <!-- Experience Section -->
+            <div class="experience-section">
+                <h2>
+                    <img src="Img/profile/Experience.png" alt="Experience Icon">
+                    Experience
+                </h2>
+                <div class="experience-item">
+                    <h3>Climate Action Volunteer</h3>
+                    <p>GreenEarth, 2020-Present</p>
+                </div>
+                <div class="experience-item">
+                    <h3>Marine Conservation Volunteer</h3>
+                    <p>Oceanic Research Institute, 2020-Present</p>
+                </div>
+                <div class="experience-item">
+                    <h3>Aquatic Habitat Restoration Volunteer</h3>
+                    <p>Coral Lifeline Project, 2020-2022</p>
+                </div>
+                <div class="experience-item">
+                    <h3>Marine Wildlife Rescue Volunteer</h3>
+                    <p>Sea Sheapherd Conservation Society, 2020-Present</p>
+                </div>
+            </div>
+
+            <!-- Achievements Section -->
+            <div class="achievements-section">
+                <h2>
+                    <img src="Img/profile/achievement.png" alt="Achievements Icon">
+                    Achievements
+                </h2>
+                <div class="achievement-item">
+                    <h3>Community Environmental Leader Award</h3>
+                    <p>2023</p>
+                </div>
+                <div class="achievement-item">
+                    <h3>Outstanding Volunteer of the Year</h3>
+                    <p>2022</p>
+                </div>
+                <div class="achievement-item">
+                    <h3>Community Environmental Leader Award</h3>
+                    <p>2023</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add this below the Experience and Achievements section -->
+        <div class="goals-supported-section">
+            <h2>UN Goals I Support</h2>
+            <div class="image-grid">
+                <div class="image-item">
+                    <img src="Img/profile/4.png" alt="Goal 1">
+                </div>
+                <div class="image-item">
+                    <img src="Img/profile/6.png" alt="Goal 2">
+                </div>
+                <div class="image-item">
+                    <img src="Img/profile/7.png" alt="Goal 3">
+                </div>
+                <div class="image-item">
+                    <img src="Img/profile/14.png" alt="Goal 4">
+                </div>
+                <div class="image-item">
+                    <img src="Img/profile/13.png" alt="Goal 5">
+                </div>
+                <div class="image-item">
+                    <img src="Img/profile/5.png" alt="Goal 6">
+                </div>
+            </div>
+        </div>
+
+        <div class="interested-in-section">
+            <h2>Interested In</h2>
+            <div class="activities-container">
+                <div class="activity">
+                    <img src="Img/profile/climateawareness.jpg" alt="Activity 1">
+                    <div class="activity-name">Climate Change Awareness Projects</div>
+                </div>
+                <div class="activity">
+                    <img src="Img/profile/coralRestoration.jpg" alt="Activity 2">
+                    <div class="activity-name">Coral Reef Restpration Volunteering</div>
+                </div>
+                <div class="activity">
+                    <img src="Img/profile/marinecleanup.jpg" alt="Activity 3">
+                    <div class="activity-name">Beach & Ocrean Cleanup Events</div>
+                </div>
+                <div class="activity">
+                    <img src="Img/profile/woman.png" alt="Activity 4">
+                    <div class="activity-name">Women's Empowerment in Conservation</div>
+                </div>
+                <div class="activity">
+                    <img src="Img/profile/reforestation.jpg" alt="Activity 5">
+                    <div class="activity-name">Reforestation Projects</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add this below the Interested In section -->
+        <div class="availability-section">
+            <h2>Availability</h2>
+            <table class="availability-table">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                        <th>Sun</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>8:00 - 9:00 AM</td>
+                        <td class="highlight"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="highlight"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>9:00 - 10:00 AM</td>
+                        <td class="highlight"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="highlight"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>10:00 - 11:00 AM</td>
+                        <td class="highlight"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>11:00 - 12:00 PM</td>
+                        <td class="highlight"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="highlight"></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>12:00 - 1:00 PM</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="highlight"></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>1:00 - 2:00 PM</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="highlight"></td>
+                        <td class="highlight"></td>
+                        <td></td>
+                        <td class="highlight"></td>
+                    </tr>
+                    <tr>
+                        <td>2:00 - 3:00 PM</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="highlight"></td>
+                        <td></td>
+                        <td></td>
+                        <td class="highlight"></td>
+                    </tr>
+                    <tr>
+                        <td>3:00 - 4:00 PM</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="highlight"></td>
+                    </tr>
+                    <tr>
+                        <td>4:00 - 5:00 PM</td>
+                        <td></td>
+                        <td class="highlight"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="highlight"></td>
+                        <td class="highlight"></td>
+                    </tr>
+                    <tr>
+                        <td>5:00 - 6:00 PM</td>
+                        <td></td>
+                        <td class="highlight"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="highlight"></td>
+                        <td class="highlight"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="contact-section">
+            <h2>Contact Me</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message or Inquiry</label>
+                    <textarea id="message" name="message" placeholder="Enter your message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="send-button">Send</button>
+            </form>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-column">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="volunteer.html">Get Involved</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Useful Links</h4>
+            <ul>
+                <li><a href="https://www.globalgoals.org/terms-conditions/">Conditions</a></li>
+                <li><a href="https://www.globalgoals.org/privacy-policy/">Privacy Policy</a></li>
+                <li><a href="https://www.globalgoals.org/cookies/">Cookies</a></li>
+                <li><a href="https://www.globalgoals.org/anti-corruption/">Anti Corruption</a></li>
+                <li><a href="https://www.globalgoals.org/asset-licence/">Asset License</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <div class="logo">
+                <img src="Img/Common/logo.png" alt="Ocean Guardians Logo">
+            </div>
+            <p>Email: <a href="mailto:info@oceanguardians.org">info@oceanguardians.org</a></p>
+            <p>Phone: +123 456 7890</p>
+        </div>
+        <div class="footer-column">
+            <h4>Content Pages</h4>
+            <ul>
+                <li><a href="content_ST1.html">Content 01</a></li>
+                <li><a href="content_ST2.html">Content 02</a></li>
+                <li><a href="content_ST3.html">Content 03</a></li>
+                <li><a href="content_ST4.html">Content 04</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Page Editors</h4>
+            <ul>
+                <li><a href="pageEditor_ST1.html">Student 1: Editor Page</a></li>
+                <li><a href="pageEditor_ST2.html">Student 2: Editor Page</a></li>
+                <li><a href="pageEditor_ST3.html">Student 3: Editor Page</a></li>
+                <li><a href="pageEditor_ST4.html">Student 4: Editor Page</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        function toggleNav() {
+            const navLinks = document.getElementById("navLinks");
+            navLinks.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
