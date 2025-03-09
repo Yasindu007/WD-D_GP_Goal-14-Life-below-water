@@ -8,26 +8,61 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" >
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/Common/common.css">
+<link rel="stylesheet" href="CSS/Common.css">
 <link rel="stylesheet" href="CSS/team.css">
 <!-------Main Header------------>
 <title>Life Below Water</title>
 </head>
 <body>
-    <div class="hero">
-    <div class="container_1">
-    <div class="navbar" id="top-nav">
-        <img class="head-img" src="/Img/Common/navimg.png" alt="Header Image">
-        <a href="index.html" >Home</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="shop.html">Shop</a>
-        <a href="profile.html">Profile</a>
-        <a href="sitemap.html">Sitemap</a>
-        <a href="team.html" class="active">Team</a>
-        <a href="feedback.html">Feedback</a>
+  <nav>
+    <div class="logo">
+        <img src="Img/Common/logo.png" alt="Logo">
     </div>
-</div>
-</div>
+
+    <div class="right-content">
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <img src="Img/Common/search.png" alt="Search" class="icon"> 
+        </div>
+
+        <div class="hamburger" onclick="toggleNav()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div class="nav-links" id="navLinks">
+            <a href="#">
+                <img src="Img/Common/home.png" alt="Home" class="icon"> 
+                Home
+            </a>
+            <a href="#">
+                <img src="Img/Common/volunteer.png" alt="Get Involved" class="icon"> 
+                Get Involved
+            </a>
+            <a href="#">
+                <img src="Img/Common/table.png" alt="Table" class="icon"> 
+                Table
+            </a>
+            <a href="#">
+                <img src="Img/Common/account.png" alt="Profile" class="icon"> 
+                Profile
+            </a>
+            <a href="#">
+                <img src="Img/Common/feedback.png" alt="Feedback" class="icon"> 
+                Feedback
+            </a>
+            <a href="#">
+                <img src="Img/Common/team.png" alt="Our Team" class="icon"> 
+                Our Team
+            </a>
+            <a href="#">
+                <img src="Img/Common/sitemap.png" alt="Sitemap" class="icon">
+                Sitemap
+            </a>
+        </div>
+    </div>
+</nav>
 
 <section class="team">
     <div class="container">
@@ -41,7 +76,7 @@
                     <img src="Img/Team/img1.jpg">
                 </div>
                 <div class="details">
-                    <h3>Sulochana<br><span>W2082266</span><br>
+                    <h3>Malith<br><span>W2082266</span><br>
                     <span><a target="_blank" href="student01.html">Link to editor's page</a></span></h3>
                     <ul>
                         <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
@@ -55,7 +90,7 @@
                     <img src="Img/Team/img2.jpg">
                 </div>
                 <div class="details">
-                    <h3>Disandu<br><span>W2083055</span><br>
+                    <h3>Akiff<br><span>W2083055</span><br>
                     <span><a target="_blank" href="student02.html">Link to editor's page</a></span></h3>
                     <ul>
                         <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
@@ -69,7 +104,7 @@
                     <img src="Img/Team/img3.jpg">
                 </div>
                 <div class="details">
-                    <h3>Yasara<br><span>W2082268</span><br>
+                    <h3>Linuke<br><span>W2119737</span><br>
                         <span><a target="_blank" href="student03.html">Link to editor's page</a></span></h3>
                     <ul>
                         <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
@@ -84,7 +119,7 @@
                     <img src="Img/Team/img4.jpg" alt="achira">
                 </div>
                 <div class="details">
-                    <h3>Achira<br><span>W2082264</span><br>
+                    <h3>Chamikara<br><span>W2082264</span><br>
                     <span><a target="_blank" href="student04.html">Link to editor's page</a></span></h3>
                     <ul>
                         <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
@@ -99,73 +134,35 @@
 </section>
 
 <!-------Main Footer------------>
-<footer class="section footer">
-    <div class="footer-cont-main">
-      <div class="footer-logo">
-        <img src="/Img/Common/sdgs_black.png" alt="Footer Logo" class="footer-img">
-        <div class="social-icons">
-          <a href="https://www.facebook.com/SustDev" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://twitter.com/SustDev" class="social-icon"><i class="fab fa-twitter"></i></a>
-          <a href="https://www.youtube.com/user/uncsd2012/featured" class="social-icon"><i class="fab fa-youtube"></i></a>
-          <a href="https://www.flickr.com/photos/sustdev/" class="social-icon"><i class="fab fa-flickr"></i></a>
+<footer>
+        <div class="footer-column">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="volunteer.html">Get Involved</a></li>
+                <li><a href="table.html">Table</Table></a></li>
+                <li><a href="profile.html">profile</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="our-team.html">Our Team</a></li>
+                <li><a href="Sitemap.html">Sitemap</a></li>
+            </ul>
         </div>
-      </div>
-      <div class="footer-cont">
-        <div class="use-links">
-          <h4>Website Links</h4>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="shop.html">Shop</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="feedback.html">Feedback</a></li>
-            <li><a href="team.html">Team</a></li>
-            <li><a href="sitemap.html">Sitemap</a></li>
-          </ul>
+        <div class="footer-column">
+            <div class="logo">
+            <img src="Img/Common/logo.png" alt="Logo">
+            </div>
+            <p>Email: <a href="mailto:lifebelowwater@gmail.com">lifebelowwatert@gmail.com</a></p>
+            <p>Phone: +123 456 7890</p>
         </div>
-      </div>
-      <div class="footer-cont">
-        <div class="use-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><a href="https://www.globalgoals.org/terms-conditions/">Conditions</a></li>
-            <li><a href="https://www.globalgoals.org/privacy-policy/">Privacy Policy</a></li>
-            <li><a href="https://www.globalgoals.org/cookies/">Cookies</a></li>
-            <li><a href="https://www.globalgoals.org/anti-corruption/">Anti Corruption</a></li>
-            <li><a href="https://www.globalgoals.org/asset-licence/">Asset License</a></li>
-          </ul>
+        <div class="footer-column">
+            <h4>Page Editors</h4>
+            <ul>
+                <li><a href="pageEditor_st1.html">Student 1: Editor Page</a></li>
+                <li><a href="pageEditor_st2.html">Student 2: Editor Page</a></li>
+                <li><a href="pageEditor_st3.html">Student 3: Editor Page</a></li>
+                <li><a href="pageEditor_st4.html">Student 4: Editor Page</a></li>
+            </ul>
         </div>
-      </div>
-      <div class="footer-cont">
-        <div class="cont-pages">
-          <h4>Content Pages</h4>
-          <ul>
-            <li><a href="content01.html">Content 01</a></li>
-            <li><a href="Content02.html">Content 02</a></li>
-            <li><a href="content03.html">Content 03</a></li>
-            <li><a href="content04.html">Content 04</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-cont">
-        <div class="our-team">
-          <h4>Student Pages</h4>
-          <ul>
-            <li><a href="student01.html">Student 01</a></li>
-            <li><a href="student02.html">Student 02</a></li>
-            <li><a href="student03.html">Student 03</a></li>
-            <li><a href="student04.html">Student 04</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="section footer-2">
-      <div class="copyright">
-        <div class="copy-cont">
-          <p>&copy; Copyright <b>United Nations</b>. All rights Reserved.<br>
-          <b>Design By Group I5</b></p>
-        </div>
-      </div>
-    </div>
-  </footer>
+    </footer>
 </body>
 </html>

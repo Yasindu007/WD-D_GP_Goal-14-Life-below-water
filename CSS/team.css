@@ -2,7 +2,7 @@ body
 {
     margin: 0;
     padding: 0;
-    background: #777777;
+    background: #608BC1;
 }
 .team{
     padding: 50px 0;
@@ -31,7 +31,7 @@ body
     margin: 20px 0 0;
     color: #ffffff;
     padding-left: 20px;
-    border-left: 5px solid #147431;
+    border-left: 5px solid #133E87;
 }
 .mgt50px{
     margin-top: 50px;
@@ -94,7 +94,7 @@ body
     margin: 0;
     padding: 0;
     font-size: 14px ;
-    color: #147431;
+    color: #133E87;
     font-weight: 900;
     text-transform: uppercase;
     position: relative;
@@ -122,20 +122,20 @@ body
 }
 .row .column .details ul li a:hover .fa-square-facebook {
     transform: rotateY(360deg);
-    color: #147431;
+    color: #133E87;
 }
 .row .column .details ul li a .fa-instagram {
     transition: 5s;
 }
 .row .column .details ul li a:hover .fa-instagram {
     transform: rotateY(360deg);
-    color: #147431;
+    color: #133E87;
 }
 .row .column .details ul li a .fa-envelope {
     transition: 5s;
 }
 .row .column .details ul li a:hover .fa-envelope {
     transform: rotateY(360deg);
-    color: #147431;
+    color: #133E87;
 }
 
