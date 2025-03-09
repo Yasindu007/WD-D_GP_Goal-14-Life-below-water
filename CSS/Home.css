@@ -5,13 +5,15 @@
   box-sizing: border-box;
 }
 
+
+
 /* Image container */
 .image-container {
+  padding-top: 300px;
   position: relative;
   width: 100%;
   height: auto;
-  overflow: hidden;
-  
+  overflow: hidden; 
 }
 
 /* Background image with a subtle zoom-in animation */
@@ -20,6 +22,7 @@
   height: auto;
   display: block;
   animation: slowZoom 10s ease-in-out infinite alternate;
+  z-index: 2;
 }
 
 /* Dark overlay with fade-in effect */
@@ -31,6 +34,7 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   animation: fadeIn 2s ease-in-out;
+
 }
 
 /* Topic text animation */
