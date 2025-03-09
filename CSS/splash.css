@@ -10,88 +10,104 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  background-image: url('../Img/Splash/splash-bg-main.png');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start; /* Changed to start to allow natural flow */
+  overflow-y: auto; /* Allow scrolling if content overflows */
+}
+
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure video covers the entire screen */
+  z-index: -1; /* Send video to the back */
 }
 
 .content-wrapper {
   text-align: center;
-  margin: 0 auto;
-  padding: 40px 20px;
-  max-width: 1000px;
+  margin: 10px auto; /* Reduced margin to save space */
+  padding: 15px; /* Reduced padding */
+  max-width: 900px; /* Reduced width */
   background-color: rgba(203, 220, 235, 0.8); /* Light blue with opacity */
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1; /* Bring content above video */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .splash-img {
-  height: 150px;
-  width: 150px;
-  margin-bottom: 20px;
+  height: auto;
+  max-width: 100%;
+  max-height: 120px; /* Reduced to save space */
+  margin: 5px 0; /* Reduced margin */
   border: 3px solid var(--dark-blue);
-  border-radius: 50%;
+  object-fit: contain;
+  filter: invert(100%);
 }
 
 h1 {
   color: var(--dark-blue);
-  font-size: 2.5em;
-  margin-bottom: 20px;
+  font-size: 1.8em; /* Reduced for better fit */
+  margin: 5px 0; /* Reduced margin */
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 h2 {
   color: var(--dark-blue);
-  font-size: 1.8em;
-  margin-top: 30px;
-  margin-bottom: 15px;
+  font-size: 1.4em; /* Reduced for better fit */
+  margin: 5px 0; /* Reduced margin */
 }
 
 .mission {
   background-color: var(--light-blue);
-  padding: 15px;
-  border-radius: 10px;
-  margin: 0 auto;
-  max-width: 600px;
+  padding: 15px; /* Reduced padding */
+  border-radius: 15px;
+  margin: 5px auto 10px; /* Reduced margin */
+  max-width: 600px; /* Reduced width */
   color: var(--dark-blue);
-  font-size: 1.1em;
+  font-size: 1.1em; /* Slightly reduced */
+  line-height: 1.5;
+  min-height: 80px; /* Reduced to save space */
 }
 
 table, th, td {
   border: 2.5px solid var(--dark-blue);
   border-collapse: collapse;
   color: var(--dark-blue);
-  margin: 0 auto;
+  margin: 0 auto 10px; /* Reduced margin */
 }
 
 th {
-  padding: 10px 30px;
+  padding: 8px 20px; /* Reduced padding */
   font-weight: bold;
   background-color: var(--mid-blue);
   color: white;
 }
 
 td {
-  padding: 10px 30px;
+  padding: 8px 20px; /* Reduced padding */
 }
 
 .circle-tst {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
+  margin: 10px 0; /* Reduced margin */
 }
 
 .circle-loader {
-  width: 50px;
-  height: 50px;
+  width: 40px; /* Reduced size */
+  height: 40px;
   border-radius: 50%;
-  border: 5px solid var(--light-blue);
+  border: 4px solid var(--light-blue);
   border-top-color: var(--mid-blue);
   animation: rotate360 4s linear infinite;
 }
@@ -103,19 +119,42 @@ td {
 
 .redirect-text {
   color: var(--dark-blue);
-  font-size: 1em;
-  margin-top: 20px;
+  font-size: 0.9em; /* Reduced for better fit */
+  margin: 10px 0; /* Reduced margin */
 }
 
 footer {
   background-color: var(--dark-blue);
   color: white;
   text-align: center;
-  padding: 10px 0;
+  padding: 8px 0; /* Reduced padding */
   width: 100%;
+  z-index: 1; /* Ensure footer stays above video */
+  margin-top: auto; /* Push footer to bottom */
 }
 
 footer p {
   margin: 0;
-  font-size: 0.9em;
+  font-size: 0.8em; /* Reduced for better fit */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .content-wrapper {
+      padding: 10px;
+      max-width: 90%;
+  }
+  .splash-img { max-height: 100px; }
+  h1 { font-size: 1.5em; }
+  h2 { font-size: 1.2em; }
+  .mission {
+      max-width: 90%;
+      padding: 10px;
+      font-size: 0.9em;
+      min-height: 60px;
+  }
+  th, td { padding: 6px 15px; }
+  .circle-loader { width: 35px; height: 35px; }
+  .redirect-text { font-size: 0.8em; }
+  footer p { font-size: 0.7em; }
 }
