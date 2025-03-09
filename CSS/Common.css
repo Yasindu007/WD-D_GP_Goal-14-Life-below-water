@@ -4,7 +4,7 @@ html, body {
     padding: 0;
     font-family: "Original Surfer", sans-serif;
     background-color: #f0f8ff;
-    color: #1976d2; /* Dark blue text */
+    color: #133E87; /* Dark blue text */
 }
 
 
@@ -37,7 +37,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
-    background: rgb(4, 17, 45);
+    background:#133E87;
     border-radius: 0;
     margin: 0;
     backdrop-filter: blur(5px);
@@ -210,7 +210,7 @@ nav {
 
 
 footer {
-    background-color: rgb(4, 17, 45);
+    background-color: #133E87;
     color: #F3F3E0;
     display: flex;
     justify-content: space-around;
