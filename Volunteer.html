@@ -5,22 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Volunteer for Life Below Water</title>
     <link rel="stylesheet" href="CSS/Volunteer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap">
 </head>
 <body>
-    <!-- Header -->
-    <header>
+    <!-- Header and Navigation from header_footer.html -->
+    <nav>
         <div class="logo">
-            <h1>Ocean Guardians</h1>
+            <img src="Img/Common/logo.png" alt="Logo">
         </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About SDG 14</a></li>
-                <li><a href="#opportunities">Volunteer Opportunities</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+
+        <div class="right-content">
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <img src="Img/Common/search.png" alt="Search" class="icon"> 
+            </div>
+
+            <div class="hamburger" onclick="toggleNav()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <div class="nav-links" id="navLinks">
+                <a href="#">
+                    <img src="Img/Common/home.png" alt="Home" class="icon"> 
+                    Home
+                </a>
+                <a href="#">
+                    <img src="Img/Common/volunteer.png" alt="Get Involved" class="icon"> 
+                    Get Involved
+                </a>
+                <a href="#">
+                    <img src="Img/Common/table.png" alt="Table" class="icon"> 
+                    Table
+                </a>
+                <a href="#">
+                    <img src="Img/Common/account.png" alt="Profile" class="icon"> 
+                    Profile
+                </a>
+                <a href="#">
+                    <img src="Img/Common/feedback.png" alt="Feedback" class="icon"> 
+                    Feedback
+                </a>
+                <a href="#">
+                    <img src="Img/Common/team.png" alt="Our Team" class="icon"> 
+                    Our Team
+                </a>
+                <a href="#">
+                    <img src="Img/Common/sitemap.png" alt="Sitemap" class="icon">
+                    Sitemap
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Original content from Volunteer.html -->
+    <section class="logo">
+        <div class="container_1">
+            <div class="navbar" id="top-nav">
+                <img class="head-img" src="/Img/Common/logo.png" alt="Header Image">
+            </div>
+        </div>
+    </section>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
@@ -48,7 +96,7 @@
                 <a href="#" class="btn">Learn More</a>
             </div>
             <div class="card">
-                <img src="Img/Volunteer/Coral_Reef_Restoration.jpg"" alt="Coral Reef Restoration">
+                <img src="Img/Volunteer/Coral_Reef_Restoration.jpg" alt="Coral Reef Restoration">
                 <h3>Coral Reef Restoration</h3>
                 <p>Dive into marine conservation in Bali by restoring coral reefs and monitoring marine life.</p>
                 <a href="#" class="btn">Learn More</a>
@@ -65,14 +113,48 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <h2>Get in Touch</h2>
-        <p>Email us at <a href="mailto:info@oceanguardians.org">info@oceanguardians.org</a> or follow us on social media!</p>
+        <p>Email us at <a href="/cdn-cgi/l/email-protection#1e7277787b7c7b727169697f6a7b6c5e79737f7772307d7173"><span class="__cf_email__" data-cfemail="84e8ede2e1e6e1e8ebf3f3e5f0e1f6f0c4e3e9e5ede8aae7ebe9">[email&#160;protected]</span></a> or follow us on social media!</p>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer from header_footer.html -->
     <footer>
-        <p>&copy; 2025 Ocean Guardians. All rights reserved.</p>
+        <div class="footer-column">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="volunteer.html">Get Involved</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="our-team.html">Our Team</a></li>
+                <li><a href="Sitemap.html">Sitemap</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <div class="logo">
+                <img src="Img/Common/logo.png" alt="Logo">
+            </div>
+            <p>Email: <a href="/cdn-cgi/l/email-protection#1e7277787b7c7b727169697f6a7b6c5e79737f7772307d7173"><span class="__cf_email__" data-cfemail="84e8ede2e1e6e1e8ebf3f3e5f0e1f6f0c4e3e9e5ede8aae7ebe9">[email&#160;protected]</span></a></p>
+            <p>Phone: +123 456 7890</p>
+        </div>
+        <div class="footer-column">
+            <h4>Page Editors</h4>
+            <ul>
+                <li><a href="pageEditor_st1.html">Student 1: Editor Page</a></li>
+                <li><a href="pageEditor_st2.html">Student 2: Editor Page</a></li>
+                <li><a href="pageEditor_st3.html">Student 3: Editor Page</a></li>
+                <li><a href="pageEditor_st4.html">Student 4: Editor Page</a></li>
+            </ul>
+        </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script>
+        function toggleNav() {
+            const navLinks = document.getElementById("navLinks");
+            navLinks.classList.toggle("active");
+        }
+    </script>
+    <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'91d68df7dc45c024',t:'MTc0MTQ4MTE3OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
 </body>
 </html>
