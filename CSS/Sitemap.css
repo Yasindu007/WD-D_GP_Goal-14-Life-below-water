@@ -3,14 +3,18 @@
 }
 body {
    margin: 0;
-   padding:0;
-   background: #608BC1;
+   padding:120px 20px 20px;
+   background: #608bc1;
    display: flex;
+   color:#133e87;
    flex-direction: column;
    justify-content: stretch;
    align-items: stretch; 
    width: 100%;
-   height: max-content; 
+   height: max-content;
+   overflow: auto;
+   position: relative;
+  
 }
 
 .head-img {
@@ -148,28 +152,18 @@ h1 {
     min-width: 1440px; 
   }
 
-.circle {
+.rect {
     fill: #608bc1;
     transition: fill 0.3s;
 }
 
-.circle:hover {
-    fill: #133e87;
+.rect:hover {
+    fill: #8a9a9f4e;
     cursor: pointer;
     border-color: #133e87;
     border-width: 3px;
-}
-.selipse{
-    fill: #133e87 ;
-    transition: fill 0.3s;
 }
 
-.selipse:hover {
-    fill: #133e87;
-    cursor: pointer;
-    border-color: #133e87;
-    border-width: 3px;
-}
 .sword{
     font-size: 11.8px;
     
