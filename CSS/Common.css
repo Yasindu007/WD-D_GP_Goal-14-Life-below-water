@@ -3,7 +3,6 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: "Original Surfer", sans-serif;
-    background-color: #f0f8ff;
     color: #133E87; /* Dark blue text */
     display: flex;
     flex-direction: column;
@@ -221,6 +220,7 @@ footer {
     padding: 20px 0;
     width: 100%;
     margin-top: auto;
+    z-index: 1000;
     
 }
 

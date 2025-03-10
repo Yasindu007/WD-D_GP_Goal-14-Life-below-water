@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">    
@@ -7,10 +7,16 @@
 <link rel="icon" type="image/x-icon" href="Img/Common/icon.png"> 
 <link rel="stylesheet" href="CSS/Sitemap.css">
 <link rel="stylesheet" href="CSS/Common.css">
-<!-------Main Header------------>
+<!-- Main Header -->
 <title>Sitemap</title>
 </head>
 <body>
+    <video id="background-video" autoplay muted loop>
+        <source src="Img/sitemap/background.mp4" type="video/mp4">
+        browser does not support the video tag
+    </video>
+
+    <div id="overlay"></div>
   <nav>
     <div class="logo">
         <img src="Img/Common/logo.png" alt="Ocean Guardians Logo">
@@ -153,7 +159,7 @@
 
     <div id="tooltip" class="tooltip"></div>
 
-<!-------Main Footer------------>
+<!-- Main Footer -->
 <footer>
     <div class="footer-column">
         <h4>Quick Links</h4>
@@ -202,6 +208,12 @@
         </ul>
     </div>
 </footer>
+<script>
+    function toggleNav() {
+        const navLinks = document.getElementById("navLinks");
+        navLinks.classList.toggle("active");
+    }
+</script>
 
 
 </body>
