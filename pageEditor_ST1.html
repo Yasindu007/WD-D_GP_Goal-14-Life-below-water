@@ -1,20 +1,17 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Editor Student - provide your student name</title>
-
-    <link rel="stylesheet" href="CSS/pageEditor_validator.css">
-    <link rel="stylesheet" href="CSS/Common.css" />
-    <!-- External CSS link -->
-
+    <title>Page Editor - Student 1</title>
+    <link rel="stylesheet" href="css/pageEditor_validator.css">
+    <link rel="stylesheet" href="CSS/Common.css">
+    <link rel="stylesheet" href="CSS/Volunteer.css">
 </head>
 <body>
     <nav>
         <div class="logo">
-            <img src="Img/Common/logo.png" alt="Ocean Guardians Logo">
+            <img src="Img/Common/logo.png" alt="Website Logo">
         </div>
         <div class="right-content">
             <div class="search-bar">
@@ -37,8 +34,6 @@
             </div>
         </div>
     </nav>
-    
-
 
     <section class="stud">
         <h2>Yasindu De Silva, Splash & Volunteer Developer</h2>
@@ -49,82 +44,69 @@
             <section>
                 <h2 id="splash">Splash Page</h2>
                 <h3>Technical Description</h3>
-                <p>I used a meta tag (<code>&lt;meta http-equiv="refresh" content="4;url=home.html"&gt;</code>) to redirect to the home page after 4 seconds. The loader animation was created using CSS with a spinning border effect (<code>border-top</code> and <code>animation: spin</code>). The background image of the ocean enhances the marine theme, styled with <code>background: url()</code>.</p> 
-                
+                <p>Developed an introductory splash screen using HTML5 and CSS3. Implemented a <meta> tag for a 4-second redirect to the main page (<meta http-equiv="refresh" content="4;url=home.html">). Styled with a full-screen background image and an animated loader using CSS keyframes for a smooth user entry experience.</p>
                 <h3>Accessibility</h3>
-                <p>The page includes semantic HTML (e.g., <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>) and a clear color contrast between text and background for readability.</p>
-                
-                <h3>Link to the validation page</h3>
-                <p><a href="validation_ST1.html#splashVal">Validation for Splash Page</a></p>
-
-                <h3>Link to the page</h3>
-                <p><a href="splash.html" target="_blank">Splash Page</a></p>
+                <p>Included `alt` text for images and ensured high contrast for text readability. Added `tabindex` for keyboard navigation.</p>
+                <h3>Link to Validation Page</h3>
+                <p><a href="validation_ST1.html#splashVal" target="_blank">View validation report</a></p>
+                <h3>Link to Page</h3>
+                <p><a href="splash.html" target="_blank">Visit Splash Page</a></p>
             </section>
 
             <section>
                 <h2 id="volunteer">Volunteer Page</h2>
                 <h3>Technical Description</h3>
-                <p>The Volunteer Page uses a flexbox layout for the program cards (<code>display: flex; flex-wrap: wrap;</code>). The scrollable section is implemented with <code>max-height</code> and <code>overflow-y: auto</code>. Buttons have hover effects using <code>transition</code> and <code>transform: scale</code>. The star rating uses JavaScript to toggle colors on hover.</p> 
-
+                <p>Created a responsive volunteer opportunities page using flexbox (`display: flex; flex-wrap: wrap`). Styled cards with images (`object-fit: cover`) and interactive buttons with hover effects. Included a hero section with a background image and overlay.</p>
                 <h3>Accessibility</h3>
-                <p>Buttons include <code>aria-label</code> attributes, and the form uses semantic elements like <code>&lt;label&gt;</code> and <code>&lt;fieldset&gt;</code> for screen reader support.</p>
-
-                <h3>Link to the validation page</h3>
-                <p><a href="validation_ST1.html#volunteerVal">Validation for Volunteer Page</a></p>
-                
-                <h3>Link to the page</h3>
-                <p><a href="volunteer.html" target="_blank">Volunteer Page</a></p>
+                <p>Added `alt` text to images, ensured keyboard navigation with `tabindex`, and maintained contrast ratios for readability.</p>
+                <h3>Link to Validation Page</h3>
+                <p><a href="validation_ST1.html#volunteerVal" target="_blank">View validation report</a></p>
+                <h3>Link to Page</h3>
+                <p><a href="volunteer.html" target="_blank">Visit Volunteer Page</a></p>
             </section>
 
             <section>
-                <h2 id="content">Content Page</h2>
+                <h2 id="content">Content Page (content_ST1.html)</h2>
                 <h3>Technical Description</h3>
-                <p>The Content Page uses internal linking with anchor tags (<code>&lt;a href="#section"&gt;</code>) and a sticky sidebar for navigation (<code>position: sticky</code>). Images are styled with borders (<code>border: 2px solid</code>) and include <code>alt</code> text for accessibility.</p> 
-
+                <p>Built an informational page with semantic <article> and <section> tags. Included internal linking with anchors and a fixed "Go to Top" button (`position: fixed`). Added four responsive images with CSS styling.</p>
                 <h3>Accessibility</h3>
-                <p>Headings follow a logical hierarchy (<code>&lt;h1&gt;</code> to <code>&lt;h3&gt;</code>), and the sidebar navigation is keyboard-accessible with <code>tabindex</code>.</p>
-
-                <h3>Link to the validation page</h3>
-                <p><a href="validation_ST1.html#contentVal">Validation for Content Page</a></p>
-                
-                <h3>Link to the page</h3>
-                <p><a href="content_ST1.html" target="_blank">Content Page</a></p>
+                <p>Ensured `alt` text for images, logical heading structure, and an `aria-label` for the "Go to Top" button.</p>
+                <h3>Link to Validation Page</h3>
+                <p><a href="validation_ST1.html#contentVal" target="_blank">View validation report</a></p>
+                <h3>Link to Page</h3>
+                <p><a href="content_ST1.html" target="_blank">Visit Content Page</a></p>
             </section>
 
             <section>
                 <h2 id="challenge">Challenges and Lessons Learned</h2>
-                <p>Implementing the loader animation was challenging due to CSS timing issues, but I resolved it by adjusting the <code>animation</code> duration. I learned the importance of testing on multiple devices for responsiveness.</p> 
+                <p>Ensured consistent redirect timing across browsers for the Splash Page and resolved card alignment issues on the Volunteer Page with flexbox adjustments. Learned to validate early for cleaner code.</p>
             </section>
 
             <section>
                 <h2 id="compliance">Compliance</h2>
-                <p>My pages comply with Janet regulations by ensuring proper file naming (e.g., splash.html) and validating HTML/CSS with no errors. I also adhered to accessibility guidelines.</p> 
+                <p>Adhered to web standards (HTML5, CSS3) and accessibility guidelines. Used original content and royalty-free images with proper attribution.</p>
             </section>
 
             <section>
                 <h2 id="ref">References</h2>
                 <ul class="ref">
-                    <li>Global Goals (2025). <i>Life Below Water.</i> Available at: <a href="https://www.globalgoals.org/goals/14-life-below-water/">https://www.globalgoals.org/goals/14-life-below-water/</a> (Last accessed: 07 Mar 2025).</li>
-                    <li>Volunteer World (2025). <i>Goal 14 Volunteer Programs.</i> Available at: <a href="https://www.volunteerworld.com/en/volunteer-abroad/goal-14-life-below-water">https://www.volunteerworld.com/en/volunteer-abroad/goal-14-life-below-water</a> (Last accessed: 07 Mar 2025).</li>
+                    <li>iStock (2025) <i>iStock.</i> Available at: <a href="https://www.istockphoto.com/">https://www.istockphoto.com/</a> (Accessed: 09 Mar 2025).</li>
+                    <li>Duckett, J., 2011. <i>HTML and CSS: Design and Build Websites.</i> John Wiley & Sons.</li>
                 </ul>
             </section>
 
             <p class="top"><a href="#top">Go top</a></p>
         </main>
-        <!-- Sidebar area -->
-        <aside>
-            <h3>Core pages developed:</h3>
 
-        <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
+        <aside>
+            <h3>Core Pages Developed:</h3>
             <ul class="top-level-ul">
-                <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
                 <li>Student 1</li>
-                    <ul> 
-                        <li><a href="#splash">Splash page</a></li>
-                        <li><a href="#volunteer">Volunteer page</a></li>
-                        <li><a href="#content">Content page</a></li>
-                    </ul>
-                
+                <ul> 
+                    <li><a href="#splash">Splash Page</a></li>
+                    <li><a href="#volunteer">Volunteer Page</a></li>
+                    <li><a href="#content">Content Page</a></li>
+                </ul>
                 <li><a href="#challenge">Challenges and Lessons Learned</a></li>
                 <li><a href="#compliance">Compliance</a></li>
                 <li><a href="#ref">References</a></li>
@@ -132,7 +114,6 @@
         </aside>
     </div>
 
-    <!-- Footer -->
     <footer>
         <div class="footer-column">
             <h4>Quick Links</h4>
@@ -149,18 +130,18 @@
         <div class="footer-column">
             <h4>Useful Links</h4>
             <ul>
-                <li><a href="https://www.globalgoals.org/terms-conditions/">Conditions</a></li>
-                <li><a href="https://www.globalgoals.org/privacy-policy/">Privacy Policy</a></li>
-                <li><a href="https://www.globalgoals.org/cookies/">Cookies</a></li>
-                <li><a href="https://www.globalgoals.org/anti-corruption/">Anti Corruption</a></li>
-                <li><a href="https://www.globalgoals.org/asset-licence/">Asset License</a></li>
+                <li><a href="#">Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Cookies</a></li>
+                <li><a href="#">Anti Corruption</a></li>
+                <li><a href="#">Asset License</a></li>
             </ul>
         </div>
         <div class="footer-column">
             <div class="logo">
-                <img src="Img/Common/logo.png" alt="Ocean Guardians Logo">
+                <img src="Img/Common/logo.png" alt="Website Logo">
             </div>
-            <p>Email: <a href="mailto:info@oceanguardians.org">info@oceanguardians.org</a></p>
+            <p>Email: <a href="mailto:info@example.org">info@example.org</a></p>
             <p>Phone: +123 456 7890</p>
         </div>
         <div class="footer-column">
@@ -182,15 +163,12 @@
             </ul>
         </div>
     </footer>
-    
-        <script>
-            function toggleNav() {
-                const navLinks = document.getElementById("navLinks");
-                navLinks.classList.toggle("active");
-            }
-        </script>
-    </body>
 
-
+    <script>
+        function toggleNav() {
+            const navLinks = document.getElementById("navLinks");
+            navLinks.classList.toggle("active");
+        }
+    </script>
 </body>
 </html>
