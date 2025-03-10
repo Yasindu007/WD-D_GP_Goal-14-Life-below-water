@@ -10,7 +10,7 @@
 <body>
     <nav>
         <div class="logo">
-            <img src="Img/Common/logo.png" alt="Website Logo">
+            <img src="Img/Common/logo.png" alt="Ocean Guardians Logo">
         </div>
         <div class="right-content">
             <div class="search-bar">
@@ -43,11 +43,11 @@
             <section>
                 <h2 id="profile">User Profile Page</h2>
                 <h3>Technical Description</h3>
-                <p>Designed a user profile page with HTML5 and CSS3. Included sections for user details and editable fields styled with a grid layout. Added a profile picture with responsive styling.</p>
+                <p>The User Profile Page uses HTML5 semantic elements (<code>&lt;main&gt;</code>, <code>&lt;div&gt;</code>) and is styled with <code>profile.css</code>. A cover video (<code>&lt;video&gt;</code>) is styled with <code>object-fit: cover</code> and runs via <code>autoplay muted loop</code>. The profile photo (<code>&lt;div&gt;</code>) uses <code>border-radius: 50%</code> and <code>position: absolute</code>. Sections like skills (<code>&lt;div class="skills-section"&gt;</code>) feature progress bars (<code>&lt;div class="skill-progress"&gt;</code>) with <code>transition: width 0.5s</code>, and goals (<code>&lt;div class="goal"&gt;</code>) have hover overlays (<code>transition: bottom 0.5s</code>). Flexbox (<code>display: flex</code>) and a grid (<code>grid-template-columns: repeat(6, 1fr)</code>) structure the layout.</p>
                 <h3>Accessibility</h3>
-                <p>Ensured `alt` text for images, labeled form inputs, and keyboard navigation support.</p>
+                <p>Images and icons include <code>alt</code> text (e.g., <code>alt="Skill Icon"</code>), form inputs use labels (<code>&lt;label for="name"&gt;</code>), and the availability table uses <code>&lt;thead&gt;</code> and <code>&lt;tbody&gt;</code>. High-contrast colors (e.g., <code>#133e87</code> on <code>#cbdceb</code>) and keyboard-navigable hover effects meet WCAG standards.</p>
                 <h3>Link to Validation Page</h3>
-                <p><a href="validation_ST4.html#profileVal" target="_blank">View validation report</a></p>
+                <p><a href="validation_ST4.html#profileVal" target="_blank">View Profile Page Validation Report</a></p>
                 <h3>Link to Page</h3>
                 <p><a href="profile.html" target="_blank">Visit Profile Page</a></p>
             </section>
@@ -55,11 +55,11 @@
             <section>
                 <h2 id="sitemap">Sitemap Page</h2>
                 <h3>Technical Description</h3>
-                <p>Created a sitemap using nested <ul> elements styled with CSS for clarity. Included links to all website pages with a hierarchical structure.</p>
+                <p>The Sitemap Page features an interactive SVG (<code>&lt;svg&gt;</code>) styled with <code>Sitemap.css</code>. Circles (<code>&lt;circle&gt;</code>) and ellipses (<code>&lt;ellipse&gt;</code>) represent pages, with hover effects (<code>transition: fill 0.3s</code>) shifting <code>fill</code> from <code>#608bc1</code> to <code>#133e87</code>. Links (<code>&lt;a&gt;</code>) use <code>data-image</code> for tooltips, and connections are drawn with <code>&lt;line&gt;</code> elements (<code>stroke: #cbdceb</code>). Media queries (e.g., <code>@media max-width: 1440px</code>) ensure responsiveness.</p>
                 <h3>Accessibility</h3>
-                <p>Added `aria-label` to navigation lists and ensured readable font sizes and contrast.</p>
+                <p>SVG text labels (<code>&lt;text&gt;</code>) aid screen readers, and navigation icons have <code>alt</code> text. Contrast between <code>#608bc1</code> circles and the <code>#608BC1</code> background could be enhanced, but hover states improve visibility.</p>
                 <h3>Link to Validation Page</h3>
-                <p><a href="validation_ST4.html#sitemapVal" target="_blank">View validation report</a></p>
+                <p><a href="validation_ST4.html#sitemapVal" target="_blank">View Sitemap Page Validation Report</a></p>
                 <h3>Link to Page</h3>
                 <p><a href="sitemap.html" target="_blank">Visit Sitemap Page</a></p>
             </section>
@@ -67,30 +67,31 @@
             <section>
                 <h2 id="content">Content Page (content_ST4.html)</h2>
                 <h3>Technical Description</h3>
-                <p>Developed an informational page with semantic markup, internal links, and a "Go to Top" button. Included styled images and text sections.</p>
+                <p>The Content Page, themed "Threats to Life Below Water," uses semantic HTML (<code>&lt;main&gt;</code>, <code>&lt;div&gt;</code>) and is styled with <code>content_ST.css</code>. A hero section features an image (<code>&lt;img src="Img/content4img/content4cover.jpg"&gt;</code>) with <code>object-fit: cover</code> and an overlay (<code>position: absolute</code>, <code>text-shadow</code>). Three content sections (<code>&lt;div class="content-container"&gt;</code>) alternate layout with <code>flex-direction: row</code> and <code>row-reverse</code>, containing images (<code>width: 45%</code>) and text. Navigation includes anchor links (<code>&lt;a href="#pollution"&gt;</code>) in a button-links section (<code>display: flex</code>) and a "Back to Top" button (<code>position: fixed</code>, <code>border-radius: 50%</code>).</p>
                 <h3>Accessibility</h3>
-                <p>Ensured `alt` text, logical headings, and ARIA labels for navigation aids.</p>
+                <p>Images have descriptive <code>alt</code> text (e.g., <code>alt="Content Image"</code>), and headings follow a logical hierarchy (<code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>). The "Back to Top" button could use <code>aria-label="Return to top"</code>, though not explicitly coded. Text contrast (e.g., white on dark overlay) meets WCAG guidelines.</p>
                 <h3>Link to Validation Page</h3>
-                <p><a href="validation_ST4.html#contentVal" target="_blank">View validation report</a></p>
+                <p><a href="validation_ST4.html#contentVal" target="_blank">View Content Page Validation Report</a></p>
                 <h3>Link to Page</h3>
                 <p><a href="content_ST4.html" target="_blank">Visit Content Page</a></p>
             </section>
 
             <section>
                 <h2 id="challenge">Challenges and Lessons Learned</h2>
-                <p>Faced issues with sitemap nesting; resolved with CSS indentation. Learned to prioritize user-friendly design in profile layouts.</p>
+                <p>The Profile Page’s video positioning required adjusting <code>z-index</code> and <code>position: absolute</code> for proper layering. The Sitemap’s SVG responsiveness needed <code>overflow-x: scroll</code> for smaller screens. The Content Page’s flex layout was refined with media queries (<code>@media max-width: 768px</code>) to stack content responsively. Learned to prioritize accessibility early, test animations for performance, and validate layouts across devices.</p>
             </section>
 
             <section>
                 <h2 id="compliance">Compliance</h2>
-                <p>Adhered to web standards and accessibility guidelines. Used original content and credited resources.</p>
+                <p>All pages adhere to HTML5 and CSS3 standards, validated with W3C tools. Accessibility follows WCAG 2.1 (e.g., contrast, keyboard navigation). Content is original, images are royalty-free with attribution, and external resources are properly licensed.</p>
             </section>
 
             <section>
                 <h2 id="ref">References</h2>
                 <ul class="ref">
-                    <li>iStock (2025) <i>iStock.</i> Available at: <a href="https://www.istockphoto.com/">https://www.istockphoto.com/</a> (Accessed: 09 Mar 2025).</li>
+                    <li>iStock (2025) <i>iStock.</i> Available at: <a href="https://www.istockphoto.com/">https://www.istockphoto.com/</a> (Accessed: 10 Mar 2025).</li>
                     <li>Duckett, J., 2011. <i>HTML and CSS: Design and Build Websites.</i> John Wiley & Sons.</li>
+                    <li>W3C (2025). <i>Web Accessibility Initiative (WAI).</i> Available at: <a href="https://www.w3.org/WAI/">https://www.w3.org/WAI/</a> (Accessed: 10 Mar 2025).</li>
                 </ul>
             </section>
 
@@ -100,7 +101,7 @@
         <aside>
             <h3>Core Pages Developed:</h3>
             <ul class="top-level-ul">
-                <li>Student 4</li>
+                <li>Student 04</li>
                 <ul> 
                     <li><a href="#profile">User Profile Page</a></li>
                     <li><a href="#sitemap">Sitemap Page</a></li>
@@ -129,18 +130,18 @@
         <div class="footer-column">
             <h4>Useful Links</h4>
             <ul>
-                <li><a href="#">Conditions</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Cookies</a></li>
-                <li><a href="#">Anti Corruption</a></li>
-                <li><a href="#">Asset License</a></li>
+                <li><a href="https://www.globalgoals.org/terms-conditions/">Conditions</a></li>
+                <li><a href="https://www.globalgoals.org/privacy-policy/">Privacy Policy</a></li>
+                <li><a href="https://www.globalgoals.org/cookies/">Cookies</a></li>
+                <li><a href="https://www.globalgoals.org/anti-corruption/">Anti Corruption</a></li>
+                <li><a href="https://www.globalgoals.org/asset-licence/">Asset License</a></li>
             </ul>
         </div>
         <div class="footer-column">
             <div class="logo">
-                <img src="Img/Common/logo.png" alt="Website Logo">
+                <img src="Img/Common/logo.png" alt="Ocean Guardians Logo">
             </div>
-            <p>Email: <a href="mailto:info@example.org">info@example.org</a></p>
+            <p>Email: <a href="mailto:info@oceanguardians.org">info@oceanguardians.org</a></p>
             <p>Phone: +123 456 7890</p>
         </div>
         <div class="footer-column">
