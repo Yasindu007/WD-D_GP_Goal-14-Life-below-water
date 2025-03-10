@@ -46,6 +46,13 @@ body
     box-sizing: border-box;
     overflow: hidden;
 }
+
+.row .column .details h3 {
+    position: relative;
+    top: -10px;
+    left: 0;
+}
+
 .row .column::before{
     content: '';
     position: absolute;
