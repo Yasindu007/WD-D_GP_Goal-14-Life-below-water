@@ -80,6 +80,7 @@ nav {
 
 /* Background image with a subtle zoom-in animation */
 .background_image {
+  padding-top: 2.5%;
   width: 100%;
   height: auto;
   display: block;
@@ -102,7 +103,7 @@ nav {
 /* Topic text animation */
 .topic_text {
   position: absolute;
-  top: 10%; /* Adjusted for better positioning below nav */
+  top: 25%; /* Adjusted for better positioning below nav */
   left: 5%;
   color: white;
   font-size: 3rem;
@@ -116,7 +117,7 @@ nav {
 /* Subtopic text animation */
 .subtopic_text {
   position: absolute;
-  top: 25%; /* Adjusted for better spacing */
+  top: 40%; /* Adjusted for better spacing */
   left: 5%;
   color: white;
   font-size: 25px;
