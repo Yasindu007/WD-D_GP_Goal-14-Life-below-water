@@ -129,6 +129,45 @@ body {
     align-self: center; /* Horizontally centers the button */
     margin-bottom: 20px; /* Consistent spacing from bottom */
 }
+/* Dropdown Styling */
+.dropdown-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.dropdown {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    background-color: #608bc1; /* Matches btn background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    appearance: none; /* Removes default dropdown arrow */
+    background-image: url('data:image/svg+xml;utf8,<svg fill="white" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>'); /* Custom arrow */
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    padding-right: 40px; /* Space for the arrow */
+    min-width: 200px; /* Consistent width */
+}
+
+.dropdown:hover {
+    background-color: #cbdceb; /* Matches btn hover */
+}
+
+.dropdown:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(96, 139, 193, 0.5); /* Subtle focus effect */
+}
+
+/* Responsive adjustment */
+@media (max-width: 768px) {
+    .dropdown {
+        width: 100%;
+        max-width: 300px; /* Prevents it from being too wide on mobile */
+    }
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
