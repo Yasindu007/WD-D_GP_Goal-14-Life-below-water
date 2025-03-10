@@ -25,12 +25,12 @@ header p {
 
 .table-container {
     padding: 20px;
-    margin: 20px auto;  /* Centers the container horizontally */
+    margin: 20px auto;  
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 80%; /* You can adjust this width as needed */
-    text-align: center;  /* Centers the content inside the container */
+    width: 80%; 
+    text-align: center;  
 }
 
 table {
