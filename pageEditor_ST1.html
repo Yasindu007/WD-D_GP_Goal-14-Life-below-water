@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Editor - Student 4</title>
+    <title>Page Editor - Student 1</title>
     <link rel="stylesheet" href="css/pageEditor_validator.css">
     <link rel="stylesheet" href="CSS/Common.css">
 </head>
 <body>
     <nav>
         <div class="logo">
-            <img src="Img/Common/logo.png" alt="Website Logo">
+            <img src="Img/Common/logo.png" alt="Ocean Guardians Logo">
         </div>
         <div class="right-content">
             <div class="search-bar">
@@ -35,7 +35,7 @@
     </nav>
 
     <section class="stud">
-        <h2>Yasindu De Silva, Engagement Content Lead</h2>
+        <h2>Malith De Silva, Engagement Content Lead</h2>
     </section>
 
     <div class="container">
@@ -43,11 +43,11 @@
             <section>
                 <h2 id="splash">Splash Page</h2>
                 <h3>Technical Description</h3>
-                <p>Developed an introductory splash screen using HTML5 and CSS3. Implemented a <meta> tag for a 4-second redirect to the main page ('meta http-equiv="refresh" content="4;url=home.html" ' ). Styled with a full-screen background image and an animated loader using CSS keyframes for a smooth user entry experience.</p>
+                <p>The Splash Page serves as an introductory screen, utilizing HTML5 for structure and CSS3 for styling. A key feature is the <code>&lt;meta http-equiv="refresh" content="4; url=home.html"&gt;</code> tag, which redirects users to the home page after 4 seconds. The page features a full-screen background video implemented with the <code>&lt;video&gt;</code> tag (attributes: <code>autoplay</code>, <code>muted</code>, <code>loop</code>) for an immersive experience. CSS properties like <code>position: absolute</code> and <code>object-fit: cover</code> ensure the video spans the viewport. A circular loader animation was added using CSS <code>@keyframes</code> to indicate loading progress, enhancing user engagement during the redirect.</p>
                 <h3>Accessibility</h3>
-                <p>Included `alt` text for images and ensured high contrast for text readability. Added `tabindex` for keyboard navigation.</p>
+                <p>Accessibility was addressed by including <code>alt</code> attributes for the logo image (<code>alt="Life Below Water splash screen logo"</code>) and fallback text for the video (<code>Your browser does not support the video tag</code>). High-contrast text (white on a dark background) ensures readability, and the <code>tabindex="0"</code> attribute was applied to key elements for keyboard navigation.</p>
                 <h3>Link to Validation Page</h3>
-                <p><a href="validation_ST1.html#splashVal" target="_blank">View validation report</a></p>
+                <p><a href="validation_ST1.html#splashVal" target="_blank">View Splash Page Validation Report</a></p>
                 <h3>Link to Page</h3>
                 <p><a href="splash.html" target="_blank">Visit Splash Page</a></p>
             </section>
@@ -55,11 +55,11 @@
             <section>
                 <h2 id="volunteer">Volunteer Page</h2>
                 <h3>Technical Description</h3>
-                <p>Created a responsive volunteer opportunities page using flexbox (`display: flex; flex-wrap: wrap`). Styled cards with images (`object-fit: cover`) and interactive buttons with hover effects. Included a hero section with a background image and overlay.</p>
+                <p>The Volunteer Page was built with a responsive layout using <code>flexbox</code> (<code>display: flex; flex-wrap: wrap</code>) for the card container, ensuring adaptability across devices. The hero section uses a background image with an overlay styled via <code>position: relative</code> and <code>background-color: rgba</code> for text readability. Volunteer opportunity cards leverage <code>&lt;img&gt;</code> tags with <code>object-fit: cover</code> for consistent image sizing, and buttons feature <code>:hover</code> effects (e.g., <code>background-color</code> transitions) for interactivity. A dropdown menu (<code>&lt;select&gt;</code>) enhances usability by allowing sorting of opportunities.</p>
                 <h3>Accessibility</h3>
-                <p>Added `alt` text to images, ensured keyboard navigation with `tabindex`, and maintained contrast ratios for readability.</p>
+                <p>Each card image includes descriptive <code>alt</code> text (e.g., <code>alt="Sea Turtle Conservation"</code>), and the navigation bar supports keyboard focus with <code>tabindex</code>. High contrast ratios were maintained (e.g., white text on dark buttons), and semantic HTML (<code>&lt;section&gt;</code>, <code>&lt;nav&gt;</code>) improves screen reader compatibility.</p>
                 <h3>Link to Validation Page</h3>
-                <p><a href="validation_ST1.html#volunteerVal" target="_blank">View validation report</a></p>
+                <p><a href="validation_ST1.html#volunteerVal" target="_blank">View Volunteer Page Validation Report</a></p>
                 <h3>Link to Page</h3>
                 <p><a href="volunteer.html" target="_blank">Visit Volunteer Page</a></p>
             </section>
@@ -67,30 +67,31 @@
             <section>
                 <h2 id="content">Content Page (content_ST1.html)</h2>
                 <h3>Technical Description</h3>
-                <p>Built an informational page with semantic <article> and <section> tags. Included internal linking with anchors and a fixed "Go to Top" button (`position: fixed`). Added four responsive images with CSS styling.</p>
+                <p>The Content Page uses semantic HTML (<code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>) to structure information on sustainable fishing. Internal navigation is facilitated by anchor links (<code>&lt;a href="#principles"&gt;</code>) and a fixed "Back to Top" button styled with <code>position: fixed</code> and <code>border-radius</code>. Images are responsive (<code>width: 90%</code> from CSS) and paired with text in a <code>flex</code>-based layout (<code>.content-container</code>). The overlay on the main image uses <code>position: absolute</code> and <code>background-color: rgba</code> for a modern design effect.</p>
                 <h3>Accessibility</h3>
-                <p>Ensured `alt` text for images, logical heading structure, and an `aria-label` for the "Go to Top" button.</p>
+                <p>Images include <code>alt</code> text (e.g., <code>alt="Content Image"</code>), and the "Back to Top" button has an <code>aria-label="Return to top of page"</code> for screen readers. A logical heading structure (<code>&lt;h1&gt;</code> to <code>&lt;h2&gt;</code>) aids navigation, and text contrast meets WCAG guidelines.</p>
                 <h3>Link to Validation Page</h3>
-                <p><a href="validation_ST1.html#contentVal" target="_blank">View validation report</a></p>
+                <p><a href="validation_ST1.html#contentVal" target="_blank">View Content Page Validation Report</a></p>
                 <h3>Link to Page</h3>
                 <p><a href="content_ST1.html" target="_blank">Visit Content Page</a></p>
             </section>
 
             <section>
                 <h2 id="challenge">Challenges and Lessons Learned</h2>
-                <p>Ensured consistent redirect timing across browsers for the Splash Page and resolved card alignment issues on the Volunteer Page with flexbox adjustments. Learned to validate early for cleaner code.</p>
+                <p>A challenge with the Splash Page was ensuring consistent redirect timing across browsers, resolved by testing and adjusting the <code>meta</code> refresh value. On the Volunteer Page, aligning cards responsively required tweaking <code>flexbox</code> properties (e.g., <code>flex-basis</code>). The Content Page’s fixed button initially overlapped content, fixed by adjusting <code>z-index</code>. These experiences reinforced the importance of cross-browser testing and early validation for cleaner code.</p>
             </section>
 
             <section>
                 <h2 id="compliance">Compliance</h2>
-                <p>Adhered to web standards (HTML5, CSS3) and accessibility guidelines. Used original content and royalty-free images with proper attribution.</p>
+                <p>All pages adhere to HTML5 and CSS3 standards, validated via W3C tools. Accessibility aligns with WCAG 2.1 guidelines (e.g., contrast, keyboard navigation). Content and images are original or royalty-free, with proper attribution, complying with web publication regulations like copyright and accessibility mandates.</p>
             </section>
 
             <section>
                 <h2 id="ref">References</h2>
                 <ul class="ref">
-                    <li>iStock (2025) <i>iStock.</i> Available at: <a href="https://www.istockphoto.com/">https://www.istockphoto.com/</a> (Accessed: 09 Mar 2025).</li>
+                    <li>iStock (2025) <i>iStock.</i> Available at: <a href="https://www.istockphoto.com/">https://www.istockphoto.com/</a> (Accessed: 10 Mar 2025).</li>
                     <li>Duckett, J., 2011. <i>HTML and CSS: Design and Build Websites.</i> John Wiley & Sons.</li>
+                    <li>W3C (2025). <i>Web Accessibility Initiative (WAI).</i> Available at: <a href="https://www.w3.org/WAI/">https://www.w3.org/WAI/</a> (Accessed: 10 Mar 2025).</li>
                 </ul>
             </section>
 
@@ -100,7 +101,7 @@
         <aside>
             <h3>Core Pages Developed:</h3>
             <ul class="top-level-ul">
-                <li>Student 1</li>
+                <li>Malith De Silva</li>
                 <ul> 
                     <li><a href="#splash">Splash Page</a></li>
                     <li><a href="#volunteer">Volunteer Page</a></li>
@@ -129,18 +130,18 @@
         <div class="footer-column">
             <h4>Useful Links</h4>
             <ul>
-                <li><a href="#">Conditions</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Cookies</a></li>
-                <li><a href="#">Anti Corruption</a></li>
-                <li><a href="#">Asset License</a></li>
+                <li><a href="https://www.globalgoals.org/terms-conditions/">Conditions</a></li>
+                <li><a href="https://www.globalgoals.org/privacy-policy/">Privacy Policy</a></li>
+                <li><a href="https://www.globalgoals.org/cookies/">Cookies</a></li>
+                <li><a href="https://www.globalgoals.org/anti-corruption/">Anti Corruption</a></li>
+                <li><a href="https://www.globalgoals.org/asset-licence/">Asset License</a></li>
             </ul>
         </div>
         <div class="footer-column">
             <div class="logo">
-                <img src="Img/Common/logo.png" alt="Website Logo">
+                <img src="Img/Common/logo.png" alt="Ocean Guardians Logo">
             </div>
-            <p>Email: <a href="mailto:info@example.org">info@example.org</a></p>
+            <p>Email: <a href="mailto:info@oceanguardians.org">info@oceanguardians.org</a></p>
             <p>Phone: +123 456 7890</p>
         </div>
         <div class="footer-column">
