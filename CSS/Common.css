@@ -5,12 +5,16 @@ html, body {
     font-family: "Original Surfer", sans-serif;
     background-color: #f0f8ff;
     color: #133E87; /* Dark blue text */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 
 body {
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 
 
